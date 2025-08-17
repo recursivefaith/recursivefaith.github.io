@@ -26,7 +26,11 @@
 - [ ] Announce on Twitter 
 - [ ] tutorial on getting obsidian up and running
 
+## Money
+1037 2.00 15min Prolific
+
 ## Notes
 0815 coffee
 0845 coffee
 0945 coffee
+1136 coffee
