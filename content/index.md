@@ -1,7 +1,7 @@
 ---
 title: Hey I'm Oz and I'm exploring Digital Transmigration
 ---
-I'm currently integrating [[Generative QR Codes]], [[Recursive Interfaces]], [[Human-Computer Interaction]] (HCI), and [[Extended Reality]] (WebXR) into one portable system I call [[Digital Transmigration]]
+> I'm currently integrating [[Generative QR Codes]], [[Recursive Interfaces]], [[Human-Computer Interaction]] (HCI), and [[Extended Reality]] (WebXR) into one portable system I call [[Digital Transmigration]]
 
 ## Roadmap
 
