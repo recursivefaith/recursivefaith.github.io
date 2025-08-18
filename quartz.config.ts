@@ -18,7 +18,7 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "recursive.faith",
-    ignorePatterns: ["private", "templates", "dailies/", ".obsidian"],
+    ignorePatterns: ["private", "templates", "dailies/*", ".obsidian"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
