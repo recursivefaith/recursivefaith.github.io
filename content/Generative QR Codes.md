@@ -18,11 +18,6 @@ Think of it: a humble QR code, capable of holding up to 2953 characters, can act
 data:text/html,hello world
 ```
 
-<iframe>
-<script>alert('hello world')</script>
-</iframe>
-
-
 ### **Agentic QRs: The URL as the Prompt**
 
 Now, here's where it gets wild. What if the code embedded in that QR isn't hand-written, but **AI-generated**? This is the essence of **"vibe coding."** Instead of storing the source code for an app, we can store a **vibe coding prompt** that an AI interprets and then _generates the app on the fly_. The URL itself becomes the prompt.
