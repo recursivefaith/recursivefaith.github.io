@@ -1,3 +1,16 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+article {
+  p {
+    white-space: pre-line !important;
+  }
+}
+
+.internal {
+  color: var(--tertiary);
+}
+a.is-unresolved {
+  color: var(--secondary);
+  background: var(--lightgray);
+}

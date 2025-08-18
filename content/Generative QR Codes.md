@@ -1,5 +1,11 @@
-> What if a single **QR code** could do more than just send you to a website? What if it _was_ the website? What does it mean for a link to click itself?
+---
+authors:
+  - Oz
+  - Gemini Flash 2.5 Pro
+---
+**Drafted by:** [[Oz]], [[Gemini Flash 2.5 Pro]]
 
+> What if a single **QR code** could do more than just send you to a website? What if it _was_ the website? What does it mean for a link to click itself?
 ### **The Secret Life of QR Codes: Tiny Canvases**
 
 Most of us think of QR codes as static links that whisk us away to a webpage. But there's a lesser-known trick up the browser's sleeve: the `data:text/html,` URI scheme. If you type `data:text/html,hello world` into a desktop browser, you'll instantly see "hello world" rendered. Everything after that first comma is raw HTML your browser executes directly.
@@ -7,6 +13,15 @@ Most of us think of QR codes as static links that whisk us away to a webpage. Bu
 Think of it: a humble QR code, capable of holding up to 2953 characters, can actually embed an **entire web app** into its very structure. It's not just a pointer; it's the _thing itself_. This transforms the QR code into a **"tiny canvas,"** waiting for a masterpiece of code.
 
 ![](https://substackcdn.com/image/fetch/$s_!7KLp!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fee5ead77-de68-450f-87eb-c0a8c386e5c5_643x442.png)
+
+```
+data:text/html,hello world
+```
+
+<iframe>
+<script>alert('hello world')</script>
+</iframe>
+
 
 ### **Agentic QRs: The URL as the Prompt**
 

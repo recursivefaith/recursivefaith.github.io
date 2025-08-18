@@ -1,21 +1,14 @@
 ---
-title: Hey I'm Oz and I'm exploring Digital Transmigration
+title: Hey I'm Oz,
 ---
-> I'm currently integrating [[Generative QR Codes]], [[Recursive Interfaces]], [[Human-Computer Interaction]] (HCI), and [[Extended Reality]] (WebXR) into one portable system I call [[Digital Transmigration]]
+# I'm exploring [[Generative QR Codes|Recursive QR Codes]]
 
-## Roadmap
+### Past explorations
 
-- [x] First true [[Generative QR Code]]
-- [ ] Revive Handsfree.js
-- [ ] Daily driving a smartwatch
-- [ ] Perspective parallax projection
-- [ ] Start a DAO for the Network State
-
-
->[!info] **Find me elsewhere at:**
-> * [x.com/recursivefaith](https://x.com/recursivefaith) - My main social media
-> * [github.com/recursivefaith](https://github.com/recursivefaith) - Where I publish code
-> * **Discord** @Recursive.Faith
-
-
-
+2022-2025 [[Recursive Interfaces]]
+2022-2023 [[Generative Art]]
+2021-2023 [[Algorithmic Art]], [[Visual Languages]]
+2018-2023 [[Handsfree Interfaces]]
+2017-2029 [[Machine Learning]], [[Computer Vision]]
+2014-2018 [[Multiuser Interfaces]]
+2011-2015 [[Modular Interfaces]]

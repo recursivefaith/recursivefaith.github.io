@@ -1,5 +1,6 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
+import { CustomLinks } from "./quartz/plugins/transformers/customlinks"
 
 /**
  * Quartz 4 Configuration
@@ -17,7 +18,7 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "recursive.faith",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    ignorePatterns: ["private", "templates", "dailies/", ".obsidian"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
@@ -55,6 +56,7 @@ const config: QuartzConfig = {
   },
   plugins: {
     transformers: [
+      CustomLinks(),
       Plugin.FrontMatter(),
       Plugin.CreatedModifiedDate({
         priority: ["frontmatter", "git", "filesystem"],
