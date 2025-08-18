@@ -49,14 +49,16 @@ Dreamt that I met Mike Tyson at a family gathering and he was asking me question
 ---
 
 # 25-08-18
-- [ ] Publish this vault
-	- [ ] ORI entry point
-	- [ ] Some demos of old projects
+- [ ] Recursive.faith
+	- [ ] Redirect Recursive.faith
+	- [ ] Publish this vault
+		- [ ] ORI entry point
+		- [ ] Some demos of old projects
+		- [ ] Announce in Discord
+		- [ ] Announce on Twitter 
 - [ ] Gnosis Copilot
 	- [ ] Output git changes to History and Changelog
-- [ ] Redirect Recursive.faith
-- [ ] Announce in Discord
-- [ ] Announce on Twitter 
+	- [ ] Update git repo
 - [ ] tutorial on getting obsidian up and running
 - [ ] obsidian styling
 	- [ ] HHMM style highlighting
@@ -69,9 +71,16 @@ Dreamt that I met Mike Tyson at a family gathering and he was asking me question
 1030 coffee
 1100 coffee
 1200 coffee (gotta slow down on coffees)
-
+1239 pushups x15, crunches x15, rev crunches x15, backrows 100x15, squats
+1346 curls 70x15, tri ext 70x15, lat shoulder raise 40x10
+1414 nutty puddy
 ## Bookmarks
-https://www.youtube.com/playlist?list=PLISEtDmihMo2qKN6AXDRUIW4zNquC_LyR
-1212 <ozramos/morpheus.git> This commit refines website typography by hiding the first letter of standard inline titles and subtly adjusting the gradient effect on "Morpheus" themed titles, shifting their color transition point. 
-1213 <ozramos/recursivefaith.github.io.git> Updated the project's changelog and reorganized daily notes, detailing website publishing progress, refined configuration, and the introduction of a new 'skills' feature for the Morpheus AI Obsidian plugin. 
-1214 <ozramos/recursivefaith.github.io.git> This commit refactors content by migrating daily log entries to a new changelog file and introducing a new daily log for 250818, while also updating the website's ignore patterns. 
+- https://www.youtube.com/playlist?list=PLISEtDmihMo2qKN6AXDRUIW4zNquC_LyR
+- https://www.portalgraph.com/en
+- https://www.shadertoy.com/view/wXs3W7
+- https://800millionparticles.blogspot.com/
+## Notes
+1212 <recursivefaith/morpheus.git> This commit refines website typography by hiding the first letter of standard inline titles and subtly adjusting the gradient effect on "Morpheus" themed titles, shifting their color transition point. 
+1213 <recursivefaith/recursivefaith.github.io.git> Updated the project's changelog and reorganized daily notes, detailing website publishing progress, refined configuration, and the introduction of a new 'skills' feature for the Morpheus AI Obsidian plugin. 
+1214 <recursivefaith/recursivefaith.github.io.git> This commit refactors content by migrating daily log entries to a new changelog file and introducing a new daily log for 250818, while also updating the website's ignore patterns. 
+1453 <ozramos/recursivefaith.github.io.git> Introduced a new chores list, restructured daily goals and health logs for 25-08-18, and updated the website configuration to publish daily notes by removing them from the ignore patterns. 

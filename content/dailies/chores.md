@@ -1,0 +1,26 @@
+- [ ] Kitchen
+	- [ ] Trash
+	- [ ] Washing machine
+	- [ ] Oven
+	- [ ] Microwave
+	- [ ] Countertops
+	- [ ] Floor
+- [ ] Bathroom
+	- [ ] Counters
+	- [ ] Sink
+	- [ ] Toilet
+	- [ ] Floor
+	- [ ] Tub
+- [ ] Halway
+	- [ ] Closet
+	- [ ] Floor
+- [ ] Living room
+	- [ ] Water tree
+	- [ ] Island
+	- [ ] Floors
+	- [ ] table
+	- [ ] sofa
+- [ ] Bedroom
+	- [ ] Closet
+	- [ ] Bed
+	- [ ] floors
