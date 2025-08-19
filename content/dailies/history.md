@@ -1,5 +1,4 @@
 # 250816
-## Goals
 - [ ] Publish this vault
 	- [x] Setup livesync
 	- [x] Publish github pages
@@ -14,7 +13,6 @@
 
 ---
 # 250817
-## Goals
 - [ ] Publish this vault
 	- [x] Setup livesync
 	- [x] Publish github pages
@@ -51,19 +49,9 @@ Dreamt that I met Mike Tyson at a family gathering and he was asking me question
 # 25-08-18
 - [ ] Recursive.faith
 	- [x] Redirect Recursive.faith
-	- [ ] Publish this vault
-		- [ ] ORI entry point
-		- [ ] Some demos of old projects
-		- [ ] Announce in Discord
-		- [ ] Announce on Twitter 
-- [ ] Gnosis Copilot
-	- [ ] Output git changes to History and Changelog
-	- [ ] Update git repo
-- [ ] tutorial on getting obsidian up and running
 - [ ] obsidian styling
 	- [x] code wrap `<user/repo.git>` style comments with
-	- [ ] render line breaks on output
-	- [ ] HHMM style highlighting
+	- [x] render line breaks on output
 
 ## Health
 0925 coffee
@@ -74,6 +62,8 @@ Dreamt that I met Mike Tyson at a family gathering and he was asking me question
 1239 pushups x15, crunches x15, rev crunches x15, backrows 100x15, squats
 1346 curls 70x15, tri ext 70x15, lat shoulder raise 40x10
 1414 nutty puddy
+1700 rice & bacon
+2250 12mg seroquel
 ## Bookmarks
 - https://www.youtube.com/playlist?list=PLISEtDmihMo2qKN6AXDRUIW4zNquC_LyR
 - https://www.portalgraph.com/en
@@ -87,4 +77,33 @@ Dreamt that I met Mike Tyson at a family gathering and he was asking me question
 1212 `<recursivefaith/morpheus.git>` This commit refines website typography by hiding the first letter of standard inline titles and subtly adjusting the gradient effect on "Morpheus" themed titles, shifting their color transition point. 
 1213 `<recursivefaith/recursivefaith.github.io.git>` Updated the project's changelog and reorganized daily notes, detailing website publishing progress, refined configuration, and the introduction of a new 'skills' feature for the Morpheus AI Obsidian plugin. 
 1214 `<recursivefaith/recursivefaith.github.io.git>` This commit refactors content by migrating daily log entries to a new changelog file and introducing a new daily log for 250818, while also updating the website's ignore patterns. 
-1453 `<recursivefaith/recursivefaith.github.io.git>` Introduced a new chores list, restructured daily goals and health logs for 25-08-18, and updated the website configuration to publish daily notes by removing them from the ignore patterns. 2213 `<recursivefaith/recursivefaith.github.io.git>` Refactored daily notes and changelog entries, standardizing repository references from `ozramos` to `recursivefaith`. The update also marks progress on website publishing and styling goals, while adding new content and a temporary file. 
+1453 `<recursivefaith/recursivefaith.github.io.git>` Introduced a new chores list, restructured daily goals and health logs for 25-08-18, and updated the website configuration to publish daily notes by removing them from the ignore patterns.
+2213 `<recursivefaith/recursivefaith.github.io.git>` Refactored daily notes and changelog entries, standardizing repository references from `ozramos` to `recursivefaith`. The update also marks progress on website publishing and styling goals, while adding new content and a temporary file. 
+
+---
+
+# 25-08-19
+- [ ] Recursive.faith
+	- [ ] Publish this vault
+		- [ ] ORI entry point
+		- [ ] Some demos of old projects
+		- [ ] Announce in Discord
+		- [ ] Announce on Twitter 
+- [ ] Gnosis Copilot
+	- [ ] Output git changes to History and Changelog
+	- [ ] Update git repo
+- [ ] tutorial on getting obsidian up and running
+- [ ] obsidian styling
+	- [ ] HHMM style highlighting
+- [ ] track health stats from watch here for last few days
+
+## Health
+**Dream:** Dream involved me and my best friend from my military days. In the dream we kept practicing the Melbourne Shuffle and going to clubs and getting into trouble. We had an epic dance off where we started flipping around like in those [AI gymnastics videos](https://www.reddit.com/r/aivideo/comments/1dt7qsa/ai_sports_gymnastics/)
+
+There's a city I keep visiting in my dreams, it feels nostalgic like i grew up there but it's note quite right. It's a city that has the feeling of home but looks like the camp I lived in Iraq. Don't remember too much else except some car chase scenes and lots of dancing haha
+
+0920 coffee
+1005 coffee
+1118 pushups x20, crunches x20, rev x20, backrows 100x15, squats x15
+1119 coffee
+1327 nutty puddy1329 `<recursivefaith/recursivefaith.github.io.git>` The commit deletes a temporary file, updates the changelog, and significantly refactors `dailies/history.md` by moving completed tasks and health logs to their respective dated sections for better organization and clarity. \n
