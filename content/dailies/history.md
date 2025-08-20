@@ -4,6 +4,8 @@
 	- [x] Publish github pages
 
 ## Health
+**Sleep:** 32 (0156-0738)
+
 2330 12.5mg seroquel
 
 ## Notes
@@ -21,10 +23,18 @@
 ## Money
 1037 2.00 15min Prolific
 
-## Dream
-Dreamt that I met Mike Tyson at a family gathering and he was asking me questions about programming lol
+| 0924      | 2.00 | 15min | Prolific |
+| --------- | ---- | ----- | -------- |
+| 1042      | 4.00 | 16min | Prolific |
+| 1144      | 2.00 | 43min | Prolific |
+| 1154      | 0.60 | 8min  | Prolific |
+| 1217      | 2.95 | 21min | Prolific |
 
 ## Health
+**Sleep:** 83 (0003-0722)
+
+**Dream:** Dreamt that I met Mike Tyson at a family gathering and he was asking me questions about programming lol
+
 0815 coffee
 0845 coffee
 0945 coffee
@@ -52,8 +62,18 @@ Dreamt that I met Mike Tyson at a family gathering and he was asking me question
 - [ ] obsidian styling
 	- [x] code wrap `<user/repo.git>` style comments with
 	- [x] render line breaks on output
+- [ ] Gnosis Copilot
+	- [x] Output git changes to History and Changelog
+
+## Money
+
+| 1306      | 2.00 | 11min | Prolific |
+| --------- | ---- | ----- | -------- |
+
 
 ## Health
+**Sleep:** 67 (0155-0814)
+
 0925 coffee
 1000 coffee
 1030 coffee
@@ -89,15 +109,21 @@ Dreamt that I met Mike Tyson at a family gathering and he was asking me question
 		- [ ] Some demos of old projects
 		- [ ] Announce in Discord
 		- [ ] Announce on Twitter 
-- [ ] Gnosis Copilot
-	- [ ] Output git changes to History and Changelog
-	- [ ] Update git repo
-- [ ] tutorial on getting obsidian up and running
+- [x] Gnosis Copilot
+	- [x] Update git repo
 - [ ] obsidian styling
 	- [ ] HHMM style highlighting
-- [ ] track health stats from watch here for last few days
+- [x] track health stats from watch here for last few days
+- [ ] same for money
+
+## Money
+
+| 1249      | 10.08 | 61min | DataAnnotation | I did the lowbey ones bc it's been a while and didn't want to "think" too hard today on this |
+| --------- | ----- | ----- | -------------- | -------------------------------------------------------------------------------------------- |
+| 2204      | 2.00  | 5min  | Prolific       |                                                                                              |
 
 ## Health
+**Sleep:** 90 (2317-0828)
 **Dream:** Dream involved me and my best friend from my military days. In the dream we kept practicing the Melbourne Shuffle and going to clubs and getting into trouble. We had an epic dance off where we started flipping around like in those [AI gymnastics videos](https://www.reddit.com/r/aivideo/comments/1dt7qsa/ai_sports_gymnastics/)
 
 There's a city I keep visiting in my dreams, it feels nostalgic like i grew up there but it's note quite right. It's a city that has the feeling of home but looks like the camp I lived in Iraq. Don't remember too much else except some car chase scenes and lots of dancing haha
@@ -106,4 +132,11 @@ There's a city I keep visiting in my dreams, it feels nostalgic like i grew up t
 1005 coffee
 1118 pushups x20, crunches x20, rev x20, backrows 100x15, squats x15
 1119 coffee
-1327 nutty puddy1329 `<recursivefaith/recursivefaith.github.io.git>` The commit deletes a temporary file, updates the changelog, and significantly refactors `dailies/history.md` by moving completed tasks and health logs to their respective dated sections for better organization and clarity. \n
+1327 nutty puddy
+1953 tri ext 70x15, curls 70x15, lat sh raise 40x15
+
+## Notes
+1329 `<recursivefaith/recursivefaith.github.io.git>` The commit deletes a temporary file, updates the changelog, and significantly refactors `dailies/history.md` by moving completed tasks and health logs to their respective dated sections for better organization and clarity.
+1741 `<recursivefaith/hey.git>` Refined Git script for standardized repo references and dual history/changelog logging, alongside simplifying the internal git agent prompt. 
+2225 Gotta start taking more notes throughout the day :D exercising again is definitely helping me get tired naturally near the end of the day. I still have some lingering sleep anxiety so may take seroquel again. I'm starting to get engagement on x which feels nice :D2327 `<recursivefaith/recursivefaith.github.io.git>` This commit primarily populates and restructures the website, adding numerous media assets and a visual gallery to the main page, while also refining the author's profile. Concurrently, it extensively refactors the daily log, consolidating detailed daily notes, health, and financial tracking into `dailies/history.md`. 
+

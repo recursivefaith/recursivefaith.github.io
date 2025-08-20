@@ -1,9 +1,7 @@
 ---
-title:
+title: Oz
 ---
-![[recursivefaith.jpg]]
-
-(bio coming soon)
+> More coming soon
 
 >[!info] **Find me elsewhere at:**
 > * [x.com/recursivefaith](https://x.com/recursivefaith) - My main social media

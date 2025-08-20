@@ -15,7 +15,7 @@
 	- [ ] Closet
 	- [ ] Floor
 - [ ] Living room
-	- [ ] Water tree
+	- [x] Water tree
 	- [ ] Island
 	- [ ] Floors
 	- [ ] table

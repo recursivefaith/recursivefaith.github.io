@@ -17,3 +17,7 @@ title: Changelog
 1453 `<recursivefaith/recursivefaith.github.io.git>` Introduced a new chores list, restructured daily goals and health logs for 25-08-18, and updated the website configuration to publish daily notes by removing them from the ignore patterns.
 2213 `<recursivefaith/recursivefaith.github.io.git>` Refactored daily notes and changelog entries, standardizing repository references from `ozramos` to `recursivefaith`. The update also marks progress on website publishing and styling goals, while adding new content and a temporary file. 
 1329 `<recursivefaith/recursivefaith.github.io.git>` The commit deletes a temporary file, updates the changelog, and significantly refactors `dailies/history.md` by moving completed tasks and health logs to their respective dated sections for better organization and clarity. \n
+1741 `<recursivefaith/hey.git>` Refined Git script for standardized repo references and dual history/changelog logging, alongside simplifying the internal git agent prompt. 
+
+2327 `<recursivefaith/recursivefaith.github.io.git>` This commit primarily populates and restructures the website, adding numerous media assets and a visual gallery to the main page, while also refining the author's profile. Concurrently, it extensively refactors the daily log, consolidating detailed daily notes, health, and financial tracking into `dailies/history.md`. 
+
