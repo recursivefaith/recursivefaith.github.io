@@ -1,11 +1,27 @@
 ---
 title: Welcome
 ---
-# I'm [[Oz]] and I'm exploring [[Generative QR Codes|Recursive QR Codes]]
+# I'm [[Oz]] and I'm exploring [[Living Digital Gardens]]
 
 > Aug 20th, 2025 - New site! Almost no content yet 😅
 
-### Past explorations
+## Manifesto
+- it's possible to augment reality
+- it's possible to create your own mesh network
+- it's possible to trade crypto through mesh networks
+- it's possible to vibe code any interface you need for any data
+- it's possible to use mesh networked crypto to run a Network State
+- [...]
+- it's possible to create generative qr codes
+- it's possible to create generative mesh networked qr codes
+- it's possible for qr codes to generate WebXR experiences
+- it's possible to make qr codes by hand
+- it's possible to make qr codes from literally dirt
+
+**Therefore from literally the dirt on the ground you can bootstrap a real-alternate reality with augmented ⁠[[Embodied Symbients]] that interface with physical reality**
+
+---
+## Past explorations
 
 2022-2025 [[Recursive Interfaces]]
 2021-2023 [[NFTs]], [[Algorithmic Art]], [[Visual Languages]]

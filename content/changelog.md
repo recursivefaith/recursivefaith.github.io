@@ -23,5 +23,7 @@ title: Changelog
 **2327** `<recursivefaith/recursivefaith.github.io.git>` This commit primarily populates and restructures the website, adding numerous media assets and a visual gallery to the main page, while also refining the author's profile. Concurrently, it extensively refactors the daily log, consolidating detailed daily notes, health, and financial tracking into `dailies/history.md`. 
 
 ## 250820
-1007 `<recursivefaith/recursivefaith.github.io.git>` This commit standardizes timestamp formatting by bolding them across changelog and daily log entries. It also updates the changelog with recent daily notes and adds a new daily log for August 20th, 2025. 
+**1007** `<recursivefaith/recursivefaith.github.io.git>` This commit standardizes timestamp formatting by bolding them across changelog and daily log entries. It also updates the changelog with recent daily notes and adds a new daily log for August 20th, 2025. 
+**1008** `<recursivefaith/hey.git>` The `git.sh` script is updated to bold timestamps when generating history log entries. This standardizes the formatting of timestamps in the recorded history. 
+**1044** `<recursivefaith/recursivefaith.github.io.git>` This commit heavily refactors the website's content and structure, introducing a new manifesto and standardizing timestamp formatting in logs. It also enhances the Quartz publishing setup with automatic lowercase slugs and refines the internal git agent's logging. 
 
