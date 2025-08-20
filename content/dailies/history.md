@@ -109,7 +109,7 @@
 - [x] Gnosis Copilot
 	- [x] Update git repo
 - [x] track health stats from watch here for last few days
-
+- [x] same for money
 ## Money
 
 | 1249      | 10.08 | 61min | DataAnnotation | I did the lowbey ones bc it's been a while and didn't want to "think" too hard today on this |
@@ -149,7 +149,8 @@ There's a city I keep visiting in my dreams, it feels nostalgic like i grew up t
 - [ ] obsidian styling
 	- [x] auto lowercase slugs in Quartz output
 	- [ ] fancy titles
-- [ ] same for money
+	- [ ] match Quarts styles to Obsidian
+	- [ ] add Matrix to Quartz
 
 ## Money
 
@@ -165,10 +166,14 @@ There's a city I keep visiting in my dreams, it feels nostalgic like i grew up t
 **0830** coffee
 **0950** coffee
 **1004** coffee
+**1152** nutty puddy
+## Bookmarks
+- [Algospeak](https://en.wikipedia.org/wiki/Algospeak)
+
 ## Notes
 
 **1007** `<recursivefaith/recursivefaith.github.io.git>` This commit standardizes timestamp formatting by bolding them across changelog and daily log entries. It also updates the changelog with recent daily notes and adds a new daily log for August 20th, 2025. 
 **1008** `<recursivefaith/hey.git>` The `git.sh` script is updated to bold timestamps when generating history log entries. This standardizes the formatting of timestamps in the recorded history. 
-
 **1044** `<recursivefaith/recursivefaith.github.io.git>` This commit heavily refactors the website's content and structure, introducing a new manifesto and standardizing timestamp formatting in logs. It also enhances the Quartz publishing setup with automatic lowercase slugs and refines the internal git agent's logging. 
+**1152** I think im gonna stop listening to podcasts while multitasking (eg chores) because I don't seem to actually retain anything, and anything even slightly technical becomes hard to follow. Instead, I'll set time aside specifically for podcasts and switch to Eckhart Tolle's method of simply being present with the chores (while listening to music ofc)**1559** `<recursivefaith/recursivefaith.github.io.git>` This commit refactors the website's core content, standardizing internal links and author references to lowercase. It introduces a new 'Sprint 2' planning document and updates the main `index` page with a clearer manifesto and new navigation links. 
 

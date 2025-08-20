@@ -1,24 +1,36 @@
 ---
 title: Welcome
 ---
-# I'm [[Oz]] and I'm exploring [[Living Digital Gardens]]
+# I'm [[oz]] and I'm exploring [[Living Digital Gardens]]
 
 > Aug 20th, 2025 - New site! Almost no content yet 😅
 
 ## Manifesto
-- it's possible to augment reality
-- it's possible to create your own mesh network
-- it's possible to trade crypto through mesh networks
-- it's possible to vibe code any interface you need for any data
-- it's possible to use mesh networked crypto to run a Network State
-- [...]
-- it's possible to create generative qr codes
-- it's possible to create generative mesh networked qr codes
-- it's possible for qr codes to generate WebXR experiences
-- it's possible to make qr codes by hand
-- it's possible to make qr codes from literally dirt
+
+**Basically, I plan to encode myself into offline [[Generative QR Codes]] that spawn agentic mixed realities, built around this [[Living Digital Garden]] you are reading**
+
+> ### Priors
+>- it's possible to augment reality
+> - it's possible to create your own mesh network
+>- it's possible to trade crypto through mesh networks
+>- it's possible to vibe code any interface you need for any data
+>- it's possible to use mesh networked crypto to run a Network State
+>- [...]
+>- it's possible to create generative qr codes
+>- it's possible to create generative mesh networked qr codes
+>- it's possible for qr codes to generate WebXR experiences
+>- it's possible to make qr codes by hand
+>- it's possible to make qr codes from literally dirt
+
 
 **Therefore from literally the dirt on the ground you can bootstrap a real-alternate reality with augmented ⁠[[Embodied Symbients]] that interface with physical reality**
+
+---
+## [[history|Daily diaries]] && [[Weekly sprints]]
+
+- I maintain a [[history|daily devlog]] which I use as context for my [[gnosis-copilot|Gnosis Copilot]], this includes health logs, dream logs, tasks, and notes as I work through my [[Weekly sprints]]
+- For just the technical changes, see my [[changelog]]
+
 
 ---
 ## Past explorations

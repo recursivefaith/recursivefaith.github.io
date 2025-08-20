@@ -27,3 +27,5 @@ title: Changelog
 **1008** `<recursivefaith/hey.git>` The `git.sh` script is updated to bold timestamps when generating history log entries. This standardizes the formatting of timestamps in the recorded history. 
 **1044** `<recursivefaith/recursivefaith.github.io.git>` This commit heavily refactors the website's content and structure, introducing a new manifesto and standardizing timestamp formatting in logs. It also enhances the Quartz publishing setup with automatic lowercase slugs and refines the internal git agent's logging. 
 
+**1559** `<recursivefaith/recursivefaith.github.io.git>` This commit refactors the website's core content, standardizing internal links and author references to lowercase. It introduces a new 'Sprint 2' planning document and updates the main `index` page with a clearer manifesto and new navigation links. 
+
