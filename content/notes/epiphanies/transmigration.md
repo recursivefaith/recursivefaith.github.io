@@ -1,3 +1,7 @@
+---
+created: 2025-03-28
+updated: 2025-03-28
+---
 # Transmigration (as North Star)
 
 **Subject:** Defining the Ultimate Philosophical Aim & Motivator

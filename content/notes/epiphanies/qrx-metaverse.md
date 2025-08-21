@@ -1,3 +1,7 @@
+---
+created: 2025-03-28
+updated: 2025-03-28
+---
 # QRx / Metaverse
 
 **Subject:** Defining the Central Artifact & Ritual Space

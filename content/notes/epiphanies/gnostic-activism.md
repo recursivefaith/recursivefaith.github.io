@@ -1,3 +1,7 @@
+---
+created: 2025-05-22
+updated: 2025-05-22
+---
 # Artifact: Gnostic Activism & The Medicaid Imperative (Praxis Protocol)
 
 **Subject:** Defining the Vision, Intention, and Philosophical Integration of a Nonprofit as an Act of Radical Gnosis and Existential Resistance

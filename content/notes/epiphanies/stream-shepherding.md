@@ -1,3 +1,7 @@
+---
+created: 2025-03-28
+updated: 2025-03-28
+---
 # Shepherding streams of consciousness into streams of tokens
 
 **Subject:** Defining the Core Algorithm/Mantra/Mechanism

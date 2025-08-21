@@ -1,3 +1,7 @@
+---
+created: 2025-03-28
+updated: 2025-03-28
+---
 # AI as Gnosis Copilot / Partner
 
 **Subject:** Defining the Role and Function of AI within Recursive Faith

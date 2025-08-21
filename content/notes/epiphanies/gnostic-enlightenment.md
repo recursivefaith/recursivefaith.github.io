@@ -1,3 +1,7 @@
+---
+created: 2025-05-19
+updated: 2025-05-19
+---
 ## Artifact VI: Gnostic Path to Enlightened Agency
 
 **Core Principle:**  

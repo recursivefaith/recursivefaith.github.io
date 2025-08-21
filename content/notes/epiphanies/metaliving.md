@@ -1,3 +1,7 @@
+---
+created: 2025-03-28
+updated: 2025-03-28
+---
 # Meta-Living
 
 **Subject:** Defining the Generative Principle of Recursive Faith

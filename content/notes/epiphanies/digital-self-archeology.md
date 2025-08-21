@@ -1,7 +1,10 @@
+---
+created: 2025-03-28
+updated: 2025-03-28
+---
 # Curation / Digital Self-Archaeology
 
 **Subject:** Defining the Foundational Data & Gnostic Practice
-
 **Source:** Dialogues with Oz (up to 250328)
 
 **Core Definition:**

@@ -31,14 +31,11 @@ title: Changelog
 **1924** `<recursivefaith/recursivefaith.github.io.git>` Refactored website content and structure, standardizing daily logs and adding new sprint planning documentation. The commit also overhauls the visual theme with a custom font and gradient text for titles. 
 **2059** `<recursivefaith/recursivefaith.github.io.git>` This commit heavily refactors the website's content and structure, introducing a new "Roadmap" on the index page, deleting numerous old daily logs while adding new entries, and importantly, modifying slug generation to preserve casing for internal links. It also updates the site's visual elements like the favicon and introduces new conceptual links. 
 **2159** `<recursivefaith/recursivefaith.github.io.git>` This commit heavily refactors the website's content and structure, moving work samples to a new "Oz" page, organizing content into a new "tutorials" directory, and updating branding assets. It also refines daily logs by removing personal dream entries and adjusts project roadmap details. 
-
 **2216** `<recursivefaith/recursivefaith.github.io.git>` This commit primarily refactors content by adding new visual assets (GIFs and PNGs) to the homepage and updating existing log files to reflect recent changes, including the migration of some commit messages into `History.md`. 
-
 **2246** `<recursivefaith/recursivefaith.github.io.git>` This commit adds a new image, updates the `History.md` log with task completion and new entries, and significantly refactors the `index.md` page by reordering content sections, refining text, and integrating new visual assets. 
-
 **2320** `<recursivefaith/recursivefaith.github.io.git>` Refactored the website's main page structure and content, integrating new visual assets and reorganizing explanatory sections. Additionally, updated the site's styling to apply a bright color to italic and code elements, and appended a personal note to the daily log. 
-
 **2325** `<recursivefaith/recursivefaith.github.io.git>` Refined website styling by adjusting the font size of the page title on mobile devices for improved readability. The change targets screens with a maximum width of 768px, making the title smaller. 
-
 **2329** `<recursivefaith/recursivefaith.github.io.git>` Refined website styling for mobile devices, reducing the page title font size and hiding the reader mode button for improved display on smaller screens. 
+
+**2359** `<recursivefaith/recursivefaith.github.io.git>` The commit primarily refactors website content and configuration, including the deletion of a conceptual README and the addition of frontmatter to "epiphanies" notes. It also updates Quartz settings to prioritize frontmatter for date tracking and refines mobile styling for page titles and the reader mode button. 
 

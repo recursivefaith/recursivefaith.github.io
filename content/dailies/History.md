@@ -11,7 +11,7 @@
 ## Notes
 **2213** `<recursivefaith/recursivefaith.github.io.git>` Renamed `README.md` to `index.md` and refined its content to emphasize system integration, while restructuring `dailies/history.md` by removing detailed daily log entries. 
 **2226** `<recursivefaith/recursivefaith.github.io.git>` Added an empty GitHub Actions deploy workflow file, likely for future automated deployments. 
-**2248** `<recursivefaith/recursivefaith.github.io.git>` Configured the Quartz website to use "Recursive.Faith" as its title and base URL, and added `.trash` to `.gitignore`. 
+**2248** `<recursivefaith/recursivefaith.github.io.git>` Configured the Quartz website to use "Recursive.Faith" as *its* title and base URL, and added `.trash` to `.gitignore`. 
 
 ---
 # 250817
@@ -138,7 +138,7 @@
 - [ ] Recursive.faith
 	- [ ] Publish this vault
 		- [x] fix broken links in folders
-		- [ ] syntax highlight italics
+		- [x] syntax highlight italics
 		- [ ] ORI entry point
 		- [x] Some demos of old projects in [[Oz]]
 		- [ ] Announce in Discord
@@ -148,9 +148,10 @@
 - [ ] obsidian styling
 	- [x] auto lowercase slugs in Quartz output
 	- [x] fancy titles
-	- [ ] fix mobile banner
+	- [x] fix mobile banner
 	- [ ] match Quarts styles to Obsidian
 	- [ ] add Matrix to Quartz
+	
 
 ## Money
 
@@ -167,7 +168,8 @@
 **1004** coffee
 **1152** [[nutty pudding]]
 **1349** pizza
-1835 25mg
+**1835** 25mg edible
+**2352** 12.5mg seroquel
 ## Bookmarks
 - [Algospeak](https://en.wikipedia.org/wiki/Algospeak)
 
@@ -207,8 +209,8 @@ outside - ai, others
 ![[Pasted image 20250820224810.png]]
 
 **2320** `<recursivefaith/recursivefaith.github.io.git>` Refactored the website's main page structure and content, integrating new visual assets and reorganizing explanatory sections. Additionally, updated the site's styling to apply a bright color to italic and code elements, and appended a personal note to the daily log. 
-
 **2325** `<recursivefaith/recursivefaith.github.io.git>` Refined website styling by adjusting the font size of the page title on mobile devices for improved readability. The change targets screens with a maximum width of 768px, making the title smaller. 
-
 **2329** `<recursivefaith/recursivefaith.github.io.git>` Refined website styling for mobile devices, reducing the page title font size and hiding the reader mode button for improved display on smaller screens. 
+
+**2359** `<recursivefaith/recursivefaith.github.io.git>` The commit primarily refactors website content and configuration, including the deletion of a conceptual README and the addition of frontmatter to "epiphanies" notes. It also updates Quartz settings to prioritize frontmatter for date tracking and refines mobile styling for page titles and the reader mode button. 
 

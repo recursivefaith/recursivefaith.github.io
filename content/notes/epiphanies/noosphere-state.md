@@ -1,3 +1,7 @@
+---
+created: 2025-03-28
+updated: 2025-03-28
+---
 # Noosphere, Network State & Meta-Living
 
 **Subject:** Exploring the Philosophical & Societal Context for Recursive Faith
