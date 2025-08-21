@@ -1,3 +1,5 @@
+> More coming soon
+
 ![[websim-clippy-wave.jpg]]
 
 # Work sample 2019 - Today
@@ -8,9 +10,6 @@
 | ![[handsfree-webxr.gif\|200]]      | ![[scratchmoar-cats.gif\|200]] | ![[modelprompter-1.png\|200]]                                   |
 | ![[handsfree-robot-cmu1.gif\|200]] | ![[zebra-mirror.gif\|200]]     | ![[basherbots.jpg\|200]]                                        |
 
-
-
-> More coming soon
 
 >[!info] **Find me elsewhere at:**
 > * [x.com/recursivefaith](https://x.com/recursivefaith) - My main social media

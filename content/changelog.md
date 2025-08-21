@@ -36,6 +36,7 @@ title: Changelog
 **2320** `<recursivefaith/recursivefaith.github.io.git>` Refactored the website's main page structure and content, integrating new visual assets and reorganizing explanatory sections. Additionally, updated the site's styling to apply a bright color to italic and code elements, and appended a personal note to the daily log. 
 **2325** `<recursivefaith/recursivefaith.github.io.git>` Refined website styling by adjusting the font size of the page title on mobile devices for improved readability. The change targets screens with a maximum width of 768px, making the title smaller. 
 **2329** `<recursivefaith/recursivefaith.github.io.git>` Refined website styling for mobile devices, reducing the page title font size and hiding the reader mode button for improved display on smaller screens. 
-
 **2359** `<recursivefaith/recursivefaith.github.io.git>` The commit primarily refactors website content and configuration, including the deletion of a conceptual README and the addition of frontmatter to "epiphanies" notes. It also updates Quartz settings to prioritize frontmatter for date tracking and refines mobile styling for page titles and the reader mode button. 
 
+**0930** `<recursivefaith/morpheus.git>` Adds a CSS rule for `.cm-em` to set its color to `var(---color-1-bright)`. This likely styles emphasized text within a code mirror editor. 
+**0931** `<recursivefaith/recursivefaith.github.io.git>` Refactored daily logs to consolidate detailed dream entries and added the new 25-08-21 daily log. Updates also include refined internal links and Quartz configuration adjustments for date prioritization. 

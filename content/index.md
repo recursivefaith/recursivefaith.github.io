@@ -22,9 +22,9 @@ title: Welcome
 ## How it will work
 
 >  **You can bootstrap realities with QR Codes:**
-it's possible to create generative qr codes
->- it's possible to create generative mesh networked qr codes
->- it's possible for qr codes to generate WebXR experiences
+> - it's possible to create [[tutorials/Generative QR Codes|Generative QR Codes]]
+>- it's possible to create generative [[Mesh Networks|mesh networked]] qr codes
+>- it's possible for qr codes to generate [[WebXR]] experiences
 >- it's possible to make qr codes by hand
 >- it's possible to make qr codes from literally dirt
 

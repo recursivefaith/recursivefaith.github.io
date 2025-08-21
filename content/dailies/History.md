@@ -1,3 +1,4 @@
+> **Hey!** These are my public personal diaries and dream logs, please don't judge me 😅 I'm sharing to add credibility to the framework, but I have flaws like anyone else 😄
 # 250816
 - [ ] Publish this vault
 	- [x] Setup livesync
@@ -71,6 +72,7 @@
 
 ## Health
 **Sleep:** 67 (0155-0814)
+**Dream:** Silly dream that I met Mike Tyson at a family gathering and he was asking me questions about programming lol
 
 **0925** coffee
 **1000** coffee
@@ -116,6 +118,9 @@
 
 ## Health
 **Sleep:** 90 (2317-0828)
+**Dream:** Dream involved me and my a friend from my military days. In the dream we kept practicing the Melbourne Shuffle and going to clubs and getting into trouble. We had an epic dance off where we started flipping around like in those [AI gymnastics videos](https://www.reddit.com/r/aivideo/comments/1dt7qsa/ai_sports_gymnastics/)
+
+There's a city I keep visiting in my dreams, it feels nostalgic like i grew up there but it's note quite right. It's a city that has the feeling of home but looks like the camp I lived in Iraq. Don't remember too much else except some car chase scenes and lots of dancing haha
 
 **0920** coffee
 **1005** coffee
@@ -139,19 +144,11 @@
 	- [ ] Publish this vault
 		- [x] fix broken links in folders
 		- [x] syntax highlight italics
-		- [ ] ORI entry point
 		- [x] Some demos of old projects in [[Oz]]
-		- [ ] Announce in Discord
-		- [ ] Announce on Twitter 
-	- [ ] Morpheus
-		- [ ] Update API to gemini Flash
 - [ ] obsidian styling
 	- [x] auto lowercase slugs in Quartz output
 	- [x] fancy titles
 	- [x] fix mobile banner
-	- [ ] match Quarts styles to Obsidian
-	- [ ] add Matrix to Quartz
-	
 
 ## Money
 
@@ -211,6 +208,57 @@ outside - ai, others
 **2320** `<recursivefaith/recursivefaith.github.io.git>` Refactored the website's main page structure and content, integrating new visual assets and reorganizing explanatory sections. Additionally, updated the site's styling to apply a bright color to italic and code elements, and appended a personal note to the daily log. 
 **2325** `<recursivefaith/recursivefaith.github.io.git>` Refined website styling by adjusting the font size of the page title on mobile devices for improved readability. The change targets screens with a maximum width of 768px, making the title smaller. 
 **2329** `<recursivefaith/recursivefaith.github.io.git>` Refined website styling for mobile devices, reducing the page title font size and hiding the reader mode button for improved display on smaller screens. 
-
 **2359** `<recursivefaith/recursivefaith.github.io.git>` The commit primarily refactors website content and configuration, including the deletion of a conceptual README and the addition of frontmatter to "epiphanies" notes. It also updates Quartz settings to prioritize frontmatter for date tracking and refines mobile styling for page titles and the reader mode button. 
 
+---
+
+##  25-08-21
+
+- [ ] Recursive.faith
+	- [ ] Publish this vault
+		- [x] fix broken links in folders
+		- [x] syntax highlight italics
+		- [x] Some demos of old projects in [[Oz]]
+		- [ ] ORI entry point
+		- [x] Link on X
+		- [ ] Link on Github
+		- [ ] Link in Discord bio
+		- [ ] Announce in Discord
+		- [ ] Announce on Twitter 
+	- [ ] Morpheus
+		- [ ] Update API to gemini Flash
+- [ ] obsidian styling
+	- [x] auto lowercase slugs in Quartz output
+	- [x] fancy titles
+	- [x] fix mobile banner
+	- [ ] match Quarts styles to Obsidian
+	- [ ] add Matrix to Quartz
+	
+
+## Money
+
+| 1249      | 10.08 | 61min | DataAnnotation | I did the lowbey ones bc it's been a while and didn't want to "think" too hard today on this |
+| --------- | ----- | ----- | -------------- | -------------------------------------------------------------------------------------------- |
+| 2204      | 2.00  | 5min  | Prolific       |                                                                                              |
+
+## Health
+**Sleep:** 82 (0031-0814) - Sleep was GOOD, had nightmares but still slept great wow
+**Dream:** Had a kind of lucid nightmare, triggered I think by overheating at night. Noticed that turning on the AC helped me get some deep deep sleep :)
+
+The nightmare was kind of traumatic, it was recursive. I was in some kind of experiment at a residential psyche ward that felt fun to be at at first. It was a kind of schizo university and everyone had schizo powers where people could summon entities (thematically it looked like a ward but the "feeling" was that i was in a university)
+
+I had gained lucidity at one point and went outside, I was near one of Portland's Bridges in 3rd perspective and flying around and doing silly dream things I can't remember. I remember visiting foodcarts and eating i think tacos
+
+At one point someone summoned an "ender beast" (what we called it) and suddenly there was a feeling that i was in a simulation. I still had some lucidity in that i felt like i could make my own choices, but it was limited in that i couldn't control the theme/nightmare switch
+
+The dream played out like a video game, Sonic the Hedgehog in 3D, and I was escaping the ender beast (kinda like The Nothing from Never Ending Story or SSERP from Pantheon). There was a violent segment of the dream where I had to watch my friends get consumed by the Ender Beast
+
+At one point I went into the basement and there was an inner acknowledgement that this would make the dream worse (basements are always scary in my dreams) but it was the only way i could escape. At one point I turned myself into a cat to see if I could hide from the beast and it seemed to work, but it kept attacking the other people and was scary. Then I kept "waking up" into other people at the ward. At first I would "wake up" confused feeling like I was in reality but then I would notice that I was looking at myself in 3rd person, gain some lucidity, and acccidentally lure the beast. At one point it was spawn-camping me and I woke up super fast like 10 times in a second
+
+When I woke up for real I was sweating but fell back to sleep quickly, I had another silly dream but I can't remember any details of it
+## Bookmarks
+- 
+
+## Notes
+**0930** `<recursivefaith/morpheus.git>` Adds a CSS rule for `.cm-em` to set its color to `var(---color-1-bright)`. This likely styles emphasized text within a code mirror editor. 
+**0931** `<recursivefaith/recursivefaith.github.io.git>` Refactored daily logs to consolidate detailed dream entries and added the new 25-08-21 daily log. Updates also include refined internal links and Quartz configuration adjustments for date prioritization. 
