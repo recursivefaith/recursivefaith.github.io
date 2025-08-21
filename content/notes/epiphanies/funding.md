@@ -5,7 +5,6 @@ updated: 2025-03-28
 # Context Artifact: Funding Strategy (Gnosis-Aligned & Sustainable)
 
 **Subject:** Defining a Funding Approach Aligned with Radical Gnosis & Long-Term Vision
-
 **Source:** Dialogues with Oz (up to 250328); Grant Opportunity Research; Strategic Considerations
 
 **Core Principle:**

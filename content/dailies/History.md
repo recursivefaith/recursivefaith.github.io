@@ -216,15 +216,13 @@ outside - ai, others
 
 - [ ] Recursive.faith
 	- [ ] Publish this vault
-		- [x] fix broken links in folders
-		- [x] syntax highlight italics
-		- [x] Some demos of old projects in [[Oz]]
-		- [ ] ORI entry point
+		- [ ] Turn /content into a submodule called notebook (ORI entry point)
 		- [x] Link on X
-		- [ ] Link on Github
-		- [ ] Link in Discord bio
+		- [x] Link on Github
+		- [x] Link in Discord bio
 		- [ ] Announce in Discord
 		- [ ] Announce on Twitter 
+	- [ ] Integrate Handsfree.js
 	- [ ] Morpheus
 		- [ ] Update API to gemini Flash
 - [ ] obsidian styling
@@ -233,6 +231,8 @@ outside - ai, others
 	- [x] fix mobile banner
 	- [ ] match Quarts styles to Obsidian
 	- [ ] add Matrix to Quartz
+- [ ] Socials
+	- [ ] X list for moots vs non moots for X Pro lists (easier to follow friends)
 	
 
 ## Money
@@ -256,9 +256,15 @@ The dream played out like a video game, Sonic the Hedgehog in 3D, and I was esca
 At one point I went into the basement and there was an inner acknowledgement that this would make the dream worse (basements are always scary in my dreams) but it was the only way i could escape. At one point I turned myself into a cat to see if I could hide from the beast and it seemed to work, but it kept attacking the other people and was scary. Then I kept "waking up" into other people at the ward. At first I would "wake up" confused feeling like I was in reality but then I would notice that I was looking at myself in 3rd person, gain some lucidity, and acccidentally lure the beast. At one point it was spawn-camping me and I woke up super fast like 10 times in a second
 
 When I woke up for real I was sweating but fell back to sleep quickly, I had another silly dream but I can't remember any details of it
+
+**0845** Coffee
+**0850** pushups x25, crunches x25, rev crunches x25, backrows 100x20, squats x20
+**0945** Coffee
+**1030** coffee
 ## Bookmarks
-- 
+- Need to share my [[Generative Zines]] on Reddit: https://www.reddit.com/r/DeepSeek/comments/1musdy0/deepseek_v31_already_does_better_than_chatgpt5/
 
 ## Notes
 **0930** `<recursivefaith/morpheus.git>` Adds a CSS rule for `.cm-em` to set its color to `var(---color-1-bright)`. This likely styles emphasized text within a code mirror editor. 
 **0931** `<recursivefaith/recursivefaith.github.io.git>` Refactored daily logs to consolidate detailed dream entries and added the new 25-08-21 daily log. Updates also include refined internal links and Quartz configuration adjustments for date prioritization. 
+**1112** `<recursivefaith/recursivefaith.github.io.git>` Refactored daily logs by consolidating health and bookmarks, updated publishing tasks, and introduced new social media goals. The main index page was significantly revised to replace daily diary links with a detailed "Funding Goals" section, while also adding descriptive notes to research areas. 

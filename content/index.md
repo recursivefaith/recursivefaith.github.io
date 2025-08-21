@@ -35,14 +35,23 @@ title: Welcome
 ---
 ## Preliminary Research
 
-2022-2025 [[Recursive Interfaces]]
-2021-2023 [[Visual interfaces]]
-2018-2021 [[Handsfree Interfaces]]
-2014-2018 [[Multiuser Interfaces]]
-2011-2015 [[Modular Interfaces]]
+2022-2025 [[Recursive Interfaces]] (Win9x)
+2021-2023 [[Visual interfaces]] (ModelPrompter)
+2018-2021 [[Handsfree Interfaces]] (Handsfree.js)
+2014-2018 [[Multiuser Interfaces]] (Linkshow)
+2011-2015 [[Modular Interfaces]] (Stemlet)
 
 ---
-## [[History|Daily diaries]] && [[Weekly sprints]]
-
-- I maintain a [[History|daily devlog]] which I use as context for my [[gnosis-copilot|Gnosis Copilot]], this includes health logs, dream logs, tasks, and notes as I work through my [[Weekly sprints]]
-- For just the technical changes, see my [[changelog]]
+## Funding Goals
+- $500 to bootstrap "[[Living Digital Gardens]]"
+	- Thermal printer for [[tutorials/Generative QR Codes|Generative QR Codes]]
+	- API costs
+- $5k to cover my [[extended reality]] research goals
+	- 3D Printers and supplies
+	- Extended reality equipment (projector, AR glasses)
+- $50k would give me financial agency
+	- Start local meetup group
+	- Attend/host conferences
+- $250k so I can start a [[robot commune]] and research/residency center
+	- Down payment on land
+	- A few humanoid robots/drones to practice with
