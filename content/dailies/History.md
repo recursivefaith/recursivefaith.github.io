@@ -196,5 +196,7 @@ outside --> RecursiveFaith --> inside
 inside - self, me
 outside - ai, others
 
-**2126** Would probably need to fund these somehow (eg for GPUs) so a crypto might help, a successful crypto would "out compete" other cryptos assuming crypto is also used to acquire base reality resources (gpus, building materials, etc...possibly energy could be gotten using [[concentrated solar energy]]
-**2146** 
+**2059** `<recursivefaith/recursivefaith.github.io.git>` This commit heavily refactors the website's content and structure, introducing a new "Roadmap" on the index page, deleting numerous old daily logs while adding new entries, and importantly, modifying slug generation to preserve casing for internal links. It also updates the site's visual elements like the favicon and introduces new conceptual links. 
+**2159** `<recursivefaith/recursivefaith.github.io.git>` This commit heavily refactors the website's content and structure, moving work samples to a new "Oz" page, organizing content into a new "tutorials" directory, and updating branding assets. It also refines daily logs by removing personal dream entries and adjusts project roadmap details. 
+**2126** Would probably need to fund these somehow (eg for GPUs) so a crypto might help, a successful crypto would "out compete" other cryptos assuming crypto is also used to acquire base reality resources (gpus, building materials, etc...possibly energy could be gotten using [[concentrated solar energy]]**2216** `<recursivefaith/recursivefaith.github.io.git>` This commit primarily refactors content by adding new visual assets (GIFs and PNGs) to the homepage and updating existing log files to reflect recent changes, including the migration of some commit messages into `History.md`. 
+

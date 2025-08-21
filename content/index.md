@@ -16,6 +16,8 @@ title: Welcome
 >- it's possible to use mesh networked crypto to run a Network State
 >- this can happen agentically
 
+![[depthperspectiveandroid.gif|250]] ![[gearless-holodeck.gif|300]]![[projectionmappingface.gif|250]]
+
 >  **You can bootstrap realities with QR Codes:**
 it's possible to create generative qr codes
 >- it's possible to create generative mesh networked qr codes
@@ -24,8 +26,8 @@ it's possible to create generative qr codes
 >- it's possible to make qr codes from literally dirt
 
 **Therefore from literally the dirt on the ground you can bootstrap a real-alternate reality with augmented ⁠[[Embodied Symbients]] that interface with physical reality**
+![[legoqr.png|250]]![[strandbeest1.gif|250]]
 
----
 ## Preliminary Research
 
 2022-2025 [[Recursive Interfaces]]
