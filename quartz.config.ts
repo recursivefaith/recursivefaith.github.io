@@ -9,7 +9,7 @@ import { CustomLinks } from "./quartz/plugins/transformers/customlinks"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Recursive.Faith",
+    pageTitle: "Recursive<span>.Faith</span>",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,

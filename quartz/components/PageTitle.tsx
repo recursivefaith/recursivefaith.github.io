@@ -1,4 +1,4 @@
-import { pathToRoot, resolveRelative } from "../util/path"
+import { pathToRoot } from "../util/path"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
 import { i18n } from "../i18n"
@@ -8,9 +8,7 @@ const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompo
   const baseDir = pathToRoot(fileData.slug!)
   return (
     <h2 class={classNames(displayClass, "page-title")}>
-      <a href={baseDir}>
-        <img src={resolveRelative(fileData.slug!, `/static/recursivefaith-title.png` as FullSlug)} alt={title} />
-      </a>
+      <a href={baseDir} dangerouslySetInnerHTML={{ __html: title }}></a>
     </h2>
   )
 }

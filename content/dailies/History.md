@@ -167,7 +167,7 @@ There's a city I keep visiting in my dreams, it feels nostalgic like i grew up t
 **0950** coffee
 **1004** coffee
 **1152** nutty puddy
-1835 25mg
+1835 
 ## Bookmarks
 - [Algospeak](https://en.wikipedia.org/wiki/Algospeak)
 
