@@ -23,6 +23,10 @@
   -webkit-text-fill-color: transparent;  
 }
 
+i, code {
+  color: var(--bright);
+}
+
 article {
   p {
     white-space: pre-line;

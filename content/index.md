@@ -5,6 +5,9 @@ title: Welcome
 
 **The idea is to [[notes/epiphanies/transmigration|encode myself]] into offline [[tutorials/Generative QR Codes|Generative QR Codes]] that spawn agentic mixed realities sustained by crypto. Technically they are [[Virtual Network States]] but I like calling them "[[Living Digital Gardens]]" because they are grounded in your dataverse**
 
+---
+## Why it will work
+
 > **Extending reality is possible:**
 >- it's possible to augment reality
 > - it's possible to create your own mesh network
@@ -14,6 +17,10 @@ title: Welcome
 >- this can happen agentically
 
 ![[depthperspectiveandroid.gif|250]] ![[gearless-holodeck.gif|300]]![[projectionmappingface.gif|250]]
+
+---
+## How it will work
+
 >  **You can bootstrap realities with QR Codes:**
 it's possible to create generative qr codes
 >- it's possible to create generative mesh networked qr codes
@@ -21,9 +28,11 @@ it's possible to create generative qr codes
 >- it's possible to make qr codes by hand
 >- it's possible to make qr codes from literally dirt
 
-![[legoqr.png|250]]  ![[strandbeest1.gif|300]] ![[creationofadamborg.png|250]]
+![[legoqr.png|250]]  ![[strandbeest1.gif|300]] ![[cmu-ozrobot-pov.gif|250]]
 
 **Therefore from literally the dirt on the ground you can bootstrap a real-alternate reality with augmented ⁠[[Embodied Symbients]] that interface with physical reality**
+
+---
 ## Preliminary Research
 
 2022-2025 [[Recursive Interfaces]]
@@ -32,9 +41,8 @@ it's possible to create generative qr codes
 2014-2018 [[Multiuser Interfaces]]
 2011-2015 [[Modular Interfaces]]
 
-- For just the technical changes, see my [[changelog]]
-
 ---
 ## [[History|Daily diaries]] && [[Weekly sprints]]
 
 - I maintain a [[History|daily devlog]] which I use as context for my [[gnosis-copilot|Gnosis Copilot]], this includes health logs, dream logs, tasks, and notes as I work through my [[Weekly sprints]]
+- For just the technical changes, see my [[changelog]]
