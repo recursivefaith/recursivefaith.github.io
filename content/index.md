@@ -1,7 +1,7 @@
 ---
 title: Welcome
 ---
-# I'm [[oz]] and I'm exploring [[Living Digital Gardens]]
+# I'm [[oz|Oz]] and I'm exploring [[Living Digital Gardens]]
 
 > Aug 20th, 2025 - New site! Almost no content yet 😅
 
@@ -26,9 +26,9 @@ title: Welcome
 **Therefore from literally the dirt on the ground you can bootstrap a real-alternate reality with augmented ⁠[[Embodied Symbients]] that interface with physical reality**
 
 ---
-## [[history|Daily diaries]] && [[Weekly sprints]]
+## [[History|Daily diaries]] && [[Weekly sprints]]
 
-- I maintain a [[history|daily devlog]] which I use as context for my [[gnosis-copilot|Gnosis Copilot]], this includes health logs, dream logs, tasks, and notes as I work through my [[Weekly sprints]]
+- I maintain a [[History|daily devlog]] which I use as context for my [[gnosis-copilot|Gnosis Copilot]], this includes health logs, dream logs, tasks, and notes as I work through my [[Weekly sprints]]
 - For just the technical changes, see my [[changelog]]
 
 
