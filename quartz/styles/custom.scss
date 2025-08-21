@@ -16,7 +16,7 @@
   -webkit-text-fill-color: transparent;
 
 }
-.page-title:first-letter, .article-title:first-letter{
+.page-title:first-letter, .page-title span:first-letter, .article-title:first-letter{
   color: var(--secondary);
   background: linear-gradient(to bottom, var(--secondary) 60%, var(--bright) 50%);
   -webkit-background-clip: text;

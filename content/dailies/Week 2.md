@@ -1,6 +1,5 @@
 # Sprint 2 - Paper Intelligence
-> (copied from ORI discord)
-> Theme of week: injecting innanimate objects with intelligence (like paper QR Codes)
+> **Theme of week:** injecting innanimate objects with intelligence (like paper QR Codes)
 
 ```
 ✨

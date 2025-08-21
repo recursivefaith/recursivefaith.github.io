@@ -81,7 +81,7 @@
 **1200** coffee (gotta slow down on coffees)
 **1239** pushups x15, crunches x15, rev crunches x15, backrows 100x15, squats
 **1346** curls 70x15, tri ext 70x15, lat shoulder raise 40x10
-**1414** nutty puddy
+**1414** [[nutty pudding]]
 **1700** rice & bacon
 **2250** 12mg seroquel
 ## Bookmarks
@@ -126,7 +126,7 @@ There's a city I keep visiting in my dreams, it feels nostalgic like i grew up t
 **1005** coffee
 **1118** pushups x20, crunches x20, rev x20, backrows 100x15, squats x15
 **1119** coffee
-**1327** nutty puddy
+**1327** [[nutty pudding]]
 **1953** tri ext 70x15, curls 70x15, lat sh raise 40x15
 
 ## Notes
@@ -166,7 +166,8 @@ There's a city I keep visiting in my dreams, it feels nostalgic like i grew up t
 **0830** coffee
 **0950** coffee
 **1004** coffee
-**1152** nutty puddy
+**1152** [[nutty pudding]]
+**1949** 
 1835 
 ## Bookmarks
 - [Algospeak](https://en.wikipedia.org/wiki/Algospeak)
@@ -178,3 +179,18 @@ There's a city I keep visiting in my dreams, it feels nostalgic like i grew up t
 **1044** `<recursivefaith/recursivefaith.github.io.git>` This commit heavily refactors the website's content and structure, introducing a new manifesto and standardizing timestamp formatting in logs. It also enhances the Quartz publishing setup with automatic lowercase slugs and refines the internal git agent's logging. 
 **1152** I think im gonna stop listening to podcasts while multitasking (eg chores) because I don't seem to actually retain anything, and anything even slightly technical becomes hard to follow. Instead, I'll set time aside specifically for podcasts and switch to Eckhart Tolle's method of simply being present with the chores (while listening to music ofc)
 **1559** `<recursivefaith/recursivefaith.github.io.git>` This commit refactors the website's core content, standardizing internal links and author references to lowercase. It introduces a new 'Sprint 2' planning document and updates the main `index` page with a clearer manifesto and new navigation links. 
+
+---
+
+**1939** i keep forgetting how powerful Obsidian is. I've been daily driving my own tools for so long, and I hadn't implemented that yet. This is where I'm at with the UI right now, I'm using an Obsidian metaphor
+![[Pasted image 20250820194014.png]]
+**1945** [[do all patterns have an afterlife?]]
+**1952** i think im building a good flow again, am going to start focusing a bit on health and leaning into the [[digital-self-archeology]] concept (which needs to be updated)
+**1948** 💡 imagine looking at the screen I'm typing but from "inside the TV" looking at me, the "inside the tv" perspective is the [[Gnosis Copilot]]. Right now I see Obsidian, and anyone who visits https://recursive.faith will also see this, eventually in real time. So there's my perspective, the perspective of the Gnosis Copilot, the perspective of the observer viewing the prior two, but also the perspective of the visitors and agents and so on. And so "mixed and extended reality" isn't simply about augmenting physical reality with our individual worlds, but literally to mix and extend our realities and perspectives with each other. Naturally some realities would likely
+**2021**
+```mermaid
+graph LR
+handsfreeJS --> RecursiveFaith
+```
+
+Of course...integrate [[HandsfreeJS]] as the interface layer -> [[LayersP5]]

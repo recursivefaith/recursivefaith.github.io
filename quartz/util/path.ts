@@ -88,7 +88,7 @@ export function slugifyFilePath(fp: FilePath, excludeExt?: boolean): FullSlug {
 }
 
 export function simplifySlug(fp: FullSlug): SimpleSlug {
-  const res = stripSlashes(trimSuffix(fp, "index"), true).toLowerCase()
+  const res = stripSlashes(trimSuffix(fp, "index"), true)
   return (res.length === 0 ? "/" : res) as SimpleSlug
 }
 
