@@ -46,3 +46,9 @@ blockquote {
   padding-bottom: 0.25em;
   background: var(--lightgray) !important;
 }
+
+@media (max-width: 768px) {
+  .page-title a {
+    font-size: 1em;
+  }
+}

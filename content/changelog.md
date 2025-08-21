@@ -38,3 +38,5 @@ title: Changelog
 
 **2320** `<recursivefaith/recursivefaith.github.io.git>` Refactored the website's main page structure and content, integrating new visual assets and reorganizing explanatory sections. Additionally, updated the site's styling to apply a bright color to italic and code elements, and appended a personal note to the daily log. 
 
+**2325** `<recursivefaith/recursivefaith.github.io.git>` Refined website styling by adjusting the font size of the page title on mobile devices for improved readability. The change targets screens with a maximum width of 768px, making the title smaller. 
+
