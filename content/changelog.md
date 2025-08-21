@@ -40,3 +40,5 @@ title: Changelog
 
 **2325** `<recursivefaith/recursivefaith.github.io.git>` Refined website styling by adjusting the font size of the page title on mobile devices for improved readability. The change targets screens with a maximum width of 768px, making the title smaller. 
 
+**2329** `<recursivefaith/recursivefaith.github.io.git>` Refined website styling for mobile devices, reducing the page title font size and hiding the reader mode button for improved display on smaller screens. 
+

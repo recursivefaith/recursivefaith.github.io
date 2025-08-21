@@ -49,6 +49,9 @@ blockquote {
 
 @media (max-width: 768px) {
   .page-title a {
-    font-size: 1em;
+    font-size: 0.6em !important;
+  }
+  .readermode {
+    display: none !important;
   }
 }
