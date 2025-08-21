@@ -33,8 +33,6 @@
 ## Health
 **Sleep:** 83 (0003-0722)
 
-**Dream:** Dreamt that I met Mike Tyson at a family gathering and he was asking me questions about programming lol
-
 **0815** coffee
 **0845** coffee
 **0945** coffee
@@ -118,9 +116,6 @@
 
 ## Health
 **Sleep:** 90 (2317-0828)
-**Dream:** Dream involved me and my best friend from my military days. In the dream we kept practicing the **Melbourne Shuffle** and going to clubs and getting into trouble. We had an epic dance off where we started flipping around like in those [AI gymnastics videos](https://www.reddit.com/r/aivideo/comments/1dt7qsa/ai_sports_gymnastics/)
-
-There's a city I keep visiting in my dreams, it feels nostalgic like i grew up there but it's note quite right. It's a city that has the feeling of home but looks like the camp I lived in Iraq. Don't remember too much else except some car chase scenes and lots of dancing haha
 
 **0920** coffee
 **1005** coffee
@@ -142,10 +137,13 @@ There's a city I keep visiting in my dreams, it feels nostalgic like i grew up t
 	- [x] **HHMM** timestamp with bold
 - [ ] Recursive.faith
 	- [ ] Publish this vault
+		- [ ] syntax highlight italics
 		- [ ] ORI entry point
-		- [ ] Some demos of old projects
+		- [x] Some demos of old projects in [[Oz]]
 		- [ ] Announce in Discord
 		- [ ] Announce on Twitter 
+	- [ ] Morpheus
+		- [ ] Update API to gemini Flash
 - [ ] obsidian styling
 	- [x] auto lowercase slugs in Quartz output
 	- [ ] fancy titles
@@ -160,15 +158,14 @@ There's a city I keep visiting in my dreams, it feels nostalgic like i grew up t
 
 ## Health
 **Sleep:** 62 (2351-0622) - Tried to stay in bed until 8 to get a better score but ended up tossing and turning, I think next time when I wake up I'll just wake up
-**Dream:** Very brief dream where I was in the living room coding and changed my X user name, when I woke up I wasn't sure if I did in real life or not and had to check lol. The dream was in 3rd person so I could see myself but I still woke up unsure
 
 **0745** coffee
 **0830** coffee
 **0950** coffee
 **1004** coffee
 **1152** [[nutty pudding]]
-**1949** 
-1835 
+**1349** pizza
+1835 25mg
 ## Bookmarks
 - [Algospeak](https://en.wikipedia.org/wiki/Algospeak)
 
@@ -186,11 +183,18 @@ There's a city I keep visiting in my dreams, it feels nostalgic like i grew up t
 ![[Pasted image 20250820194014.png]]
 **1945** [[do all patterns have an afterlife?]]
 **1952** i think im building a good flow again, am going to start focusing a bit on health and leaning into the [[digital-self-archeology]] concept (which needs to be updated)
-**1948** 💡 imagine looking at the screen I'm typing but from "inside the TV" looking at me, the "inside the tv" perspective is the [[Gnosis Copilot]]. Right now I see Obsidian, and anyone who visits https://recursive.faith will also see this, eventually in real time. So there's my perspective, the perspective of the Gnosis Copilot, the perspective of the observer viewing the prior two, but also the perspective of the visitors and agents and so on. And so "mixed and extended reality" isn't simply about augmenting physical reality with our individual worlds, but literally to mix and extend our realities and perspectives with each other. Naturally some realities would likely
+**1948** 💡 imagine looking at the screen I'm typing but from "inside the TV" looking at me, the "inside the tv" perspective is the [[Gnosis Copilot]]. Right now I see Obsidian, and anyone who visits https://recursive.faith will also see this, eventually in real time. So there's my perspective, the perspective of the Gnosis Copilot, the perspective of the observer viewing the prior two, but also the perspective of the visitors and agents and so on. And so "mixed and extended reality" isn't simply about augmenting physical reality with our individual worlds, but literally to mix and extend our realities and perspectives with each other
+
 **2021**
+**Recursive Faith is an interface**, so i have to make this less about me and more about helping others learn how to integrate the system (ofc need to prove the system myself)
+
 ```mermaid
 graph LR
-handsfreeJS --> RecursiveFaith
+inside --> RecursiveFaith --> outside
+outside --> RecursiveFaith --> inside
 ```
+inside - self, me
+outside - ai, others
 
-Of course...integrate [[HandsfreeJS]] as the interface layer -> [[LayersP5]]
+**2126** Would probably need to fund these somehow (eg for GPUs) so a crypto might help, a successful crypto would "out compete" other cryptos assuming crypto is also used to acquire base reality resources (gpus, building materials, etc...possibly energy could be gotten using [[concentrated solar energy]]
+**2146** 

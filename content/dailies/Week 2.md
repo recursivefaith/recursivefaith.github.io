@@ -14,9 +14,7 @@
 
 ## Sprint Goals
 :white_check_mark: Start #"(Ideas) Memetics Museum" 
-⏳️ Archive x threads on Notion
 ⏳️ Draft #"(Draft) Embodied Symbients"  (universal interfaces series)
-- [ ] Archive x threads on Substack
 - [ ] Publish #"(Shelved) Generative QR Codes" to Substack
 - [ ] Finish #"(shelved) Generative Paper"  prototype, look for collaborators to contribute a page ideas (6 pages total) 
 - [ ] Start a thread on the WebXR memetics WebXR Memetics Museum Collaboration

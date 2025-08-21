@@ -3,7 +3,7 @@ authors:
   - Oz
   - Gemini Flash 2.5 Pro
 ---
-**Drafted by:** [[oz]], [[Gemini Flash 2.5 Pro]]
+**Drafted by:** [[Oz]], [[Gemini Flash 2.5 Pro]]
 
 > What if a single **QR code** could do more than just send you to a website? What if it _was_ the website? What does it mean for a link to click itself?
 ### **The Secret Life of QR Codes: Tiny Canvases**

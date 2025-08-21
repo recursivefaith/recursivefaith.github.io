@@ -28,8 +28,8 @@ title: Changelog
 **1044** `<recursivefaith/recursivefaith.github.io.git>` This commit heavily refactors the website's content and structure, introducing a new manifesto and standardizing timestamp formatting in logs. It also enhances the Quartz publishing setup with automatic lowercase slugs and refines the internal git agent's logging. 
 **1559** `<recursivefaith/recursivefaith.github.io.git>` This commit refactors the website's core content, standardizing internal links and author references to lowercase. It introduces a new 'Sprint 2' planning document and updates the main `index` page with a clearer manifesto and new navigation links.
 **1904** `<recursivefaith/recursivefaith.github.io.git>` This commit refactors website content and structure, standardizing daily log file names and internal links to use consistent capitalization, and removing old content. It also introduces new sprint planning documentation and significantly updates the website's visual theme with a custom font, gradient text effects, and new color variables. 
-
 **1924** `<recursivefaith/recursivefaith.github.io.git>` Refactored website content and structure, standardizing daily logs and adding new sprint planning documentation. The commit also overhauls the visual theme with a custom font and gradient text for titles. 
-
 **2059** `<recursivefaith/recursivefaith.github.io.git>` This commit heavily refactors the website's content and structure, introducing a new "Roadmap" on the index page, deleting numerous old daily logs while adding new entries, and importantly, modifying slug generation to preserve casing for internal links. It also updates the site's visual elements like the favicon and introduces new conceptual links. 
+
+**2159** `<recursivefaith/recursivefaith.github.io.git>` This commit heavily refactors the website's content and structure, moving work samples to a new "Oz" page, organizing content into a new "tutorials" directory, and updating branding assets. It also refines daily logs by removing personal dream entries and adjusts project roadmap details. 
 
