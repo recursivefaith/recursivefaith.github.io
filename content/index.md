@@ -35,6 +35,7 @@ title: Welcome
 ---
 ## Preliminary Research
 
+2024-2025 [[Living Digital Gardens]] ([[notes/epiphanies/Gnosis Copilot|Gnosis Copilot]])
 2022-2025 [[Recursive Interfaces]] (Win9x)
 2021-2023 [[Visual interfaces]] (ModelPrompter)
 2018-2021 [[Handsfree Interfaces]] (Handsfree.js)
