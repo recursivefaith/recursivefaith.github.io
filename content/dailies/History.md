@@ -303,7 +303,9 @@ When I woke up for real I was sweating but fell back to sleep quickly, I had ano
 	- [ ] add Matrix to Quartz
 	- [ ] show popups as windows
 - [ ] Socials
+	- [x] Github repo image (./quartz/static/og-image.png)
 	- [ ] X list for moots vs non moots for X Pro lists (easier to follow friends)
+	- [ ] inbox zero
 	
 ## Health
 **Sleep:** (forgot to charge my watch)
@@ -318,3 +320,5 @@ When I woke up for real I was sweating but fell back to sleep quickly, I had ano
 **1149** OH this beautifully captures my "[[notes/epiphanies/transmigration|encoding myself into qr codes]]" concept
 https://x.com/taimei_886/status/1959003200650191149
 ![[Pasted image 20250823114953.png]]**1754** `<recursivefaith/recursivefaith.github.io.git>` This commit adds a new image and integrates it into the "Transmigration" epiphany note. It also extensively updates the daily logs for August 22nd and 23rd, detailing Handsfree.js integration, personal reflections, and task progress. 
+**1849** `<recursivefaith/content.git>` This commit extensively refactors the project's content and structure, migrating daily logs, changelogs, and personal reflections into a public-facing "digital garden." It introduces comprehensive philosophical notes defining "Recursive Faith" and "Gnosis Copilot," alongside integrating multimedia and project demos, all tailored for an AI audience. 
+**1850** `<recursivefaith/recursivefaith.github.io.git>` Extensively refactored content by introducing a new `content` git submodule, migrating daily logs and reflections into it to establish a public-facing digital garden. This update also included a new `og-image.png` and refined task lists. 
