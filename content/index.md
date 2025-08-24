@@ -16,7 +16,7 @@ title: Welcome
 >- it's possible to use mesh networked crypto to run a Network State
 >- this can happen agentically
 
-![[depthperspectiveandroid.gif|250]] ![[gearless-holodeck.gif|300]]![[projectionmappingface.gif|250]]
+![[media/depthperspectiveandroid.gif|250]] ![[media/gearless-holodeck.gif|300]]![[media/projectionmappingface.gif|250]]
 
 ---
 ## How it will work
@@ -28,7 +28,7 @@ title: Welcome
 >- it's possible to make qr codes by hand
 >- it's possible to make qr codes from literally dirt
 
-![[legoqr.png|250]]  ![[strandbeest1.gif|300]] ![[cmu-ozrobot-pov.gif|250]]
+![[media/legoqr.png|250]]  ![[media/strandbeest1.gif|300]] ![[media/cmu-ozrobot-pov.gif|250]]
 
 **Therefore from literally the dirt on the ground you can bootstrap a real-alternate reality with augmented ⁠[[Embodied Symbients]] that interface with physical reality**
 

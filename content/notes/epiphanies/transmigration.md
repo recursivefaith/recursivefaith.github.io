@@ -3,7 +3,7 @@ created: 2025-03-28
 updated: 2025-03-28
 ---
 # Transmigration (as North Star)
-![[Pasted image 20250823114953.png]]
+![[media/Pasted image 20250823114953.png]]
 image source: https://x.com/taimei_886/status/1959003200650191149
 
 **Subject:** Defining the Ultimate Philosophical Aim & Motivator
