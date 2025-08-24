@@ -275,16 +275,7 @@ When I woke up for real I was sweating but fell back to sleep quickly, I had ano
 
 - [ ] Recursive.faith
 	- [ ] Integrate Handsfree.js
-		- [ ] Start Handsfree Button
-		- [ ] Enable handsfree browsing
-	- [ ] Morpheus
-		- [ ] Update API to gemini Flash
-		- [ ] Integrate Terminal (with vim, tmux)
-- [ ] obsidian styling
-	- [ ] match Quarts styles to Obsidian
-	- [ ] add Matrix to Quartz
-- [ ] Socials
-	- [ ] X list for moots vs non moots for X Pro lists (easier to follow friends)
+		- [x] Add as dependency
 	
 
 ## Health
@@ -293,3 +284,37 @@ When I woke up for real I was sweating but fell back to sleep quickly, I had ano
 **1542** ok going to start re-integrating Handsfree, it will be hard lonely and traumatic but i have to do it🧘
 **1557** `<recursivefaith/morpheus.git>` Added the `handsfree` library as a new project dependency, including its sub-dependencies, likely for gesture and motion tracking features. 
 **1558** `<recursivefaith/recursivefaith.github.io.git>` Adds the `handsfree` library to the Morpheus plugin and updates daily logs for 25-08-21 and 25-08-22, reflecting task completion and new plans for Handsfree integration. Also includes minor content restructuring and a file rename. 
+
+
+---
+
+##  25-08-23
+
+- [ ] Recursive.faith
+	- [ ] Integrate Handsfree.js
+		- [ ] Start Handsfree Button
+		- [ ] Enable handsfree browsing
+	- [ ] Morpheus
+		- [ ] Update API to gemini Flash
+		- [ ] Integrate Terminal (with vim, tmux)
+		- [ ] Add LLM to frontend too
+- [ ] Obsidian Quartz styling
+	- [ ] match Quarts styles to Obsidian
+	- [ ] add Matrix to Quartz
+	- [ ] show popups as windows
+- [ ] Socials
+	- [ ] X list for moots vs non moots for X Pro lists (easier to follow friends)
+	
+## Health
+**Sleep:** (forgot to charge my watch)
+**1049** coffee, [[notes/food/nutty pudding|nutty pudding]]
+**1131** coffee
+**1534** 15min walk
+## Money
+**1311** 3.91 31min Prolific
+**1348** 0.55 2min Prolific
+## Notes
+**1045** Huzzah! Disconnected for about 36hrs to recharge, i feel GREAT but a bit "slow" 😅 I think i had some anxiety around publishing Handsfree.js (as i often do), but this revival will be hyperfocused on being my interaction layer to this digital garden
+**1149** OH this beautifully captures my "[[notes/epiphanies/transmigration|encoding myself into qr codes]]" concept
+https://x.com/taimei_886/status/1959003200650191149
+![[Pasted image 20250823114953.png]]**1754** `<recursivefaith/recursivefaith.github.io.git>` This commit adds a new image and integrates it into the "Transmigration" epiphany note. It also extensively updates the daily logs for August 22nd and 23rd, detailing Handsfree.js integration, personal reflections, and task progress. 
