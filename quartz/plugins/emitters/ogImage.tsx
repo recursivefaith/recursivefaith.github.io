@@ -109,32 +109,49 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
     getQuartzComponents() {
       return []
     },
-    async *emit(ctx, content, _resources) {
-      const cfg = ctx.cfg.configuration
-      const headerFont = cfg.theme.typography.header
-      const bodyFont = cfg.theme.typography.body
-      const fonts = await getSatoriFonts(headerFont, bodyFont)
+// Inside the CustomOgImages plugin
+async *emit(ctx, content, _resources) {
+  const cfg = ctx.cfg.configuration
+  const headerFont = cfg.theme.typography.header
+  const bodyFont = cfg.theme.typography.body
+  const fonts = await getSatoriFonts(headerFont, bodyFont)
 
-      for (const [_tree, vfile] of content) {
-        if (vfile.data.frontmatter?.socialImage !== undefined) continue
-        yield processOgImage(ctx, vfile.data, fonts, fullOptions)
-      }
-    },
-    async *partialEmit(ctx, _content, _resources, changeEvents) {
-      const cfg = ctx.cfg.configuration
-      const headerFont = cfg.theme.typography.header
-      const bodyFont = cfg.theme.typography.body
-      const fonts = await getSatoriFonts(headerFont, bodyFont)
+  for (const [_tree, vfile] of content) {
+    if (vfile.data.frontmatter?.socialImage !== undefined) continue
+    
+    // Add try-catch here
+    try {
+      yield processOgImage(ctx, vfile.data, fonts, fullOptions)
+    } catch (err) {
+      console.warn(
+        `[CustomOgImages] Failed to generate social image for "${vfile.data.slug}": ${err}`,
+      )
+    }
+  }
+},
+// Inside the CustomOgImages plugin
+async *partialEmit(ctx, _content, _resources, changeEvents) {
+  const cfg = ctx.cfg.configuration
+  const headerFont = cfg.theme.typography.header
+  const bodyFont = cfg.theme.typography.body
+  const fonts = await getSatoriFonts(headerFont, bodyFont)
 
-      // find all slugs that changed or were added
-      for (const changeEvent of changeEvents) {
-        if (!changeEvent.file) continue
-        if (changeEvent.file.data.frontmatter?.socialImage !== undefined) continue
-        if (changeEvent.type === "add" || changeEvent.type === "change") {
-          yield processOgImage(ctx, changeEvent.file.data, fonts, fullOptions)
-        }
+  for (const changeEvent of changeEvents) {
+    if (!changeEvent.file) continue
+    if (changeEvent.file.data.frontmatter?.socialImage !== undefined) continue
+    if (changeEvent.type === "add" || changeEvent.type === "change") {
+      
+      // Add try-catch here
+      try {
+        yield processOgImage(ctx, changeEvent.file.data, fonts, fullOptions)
+      } catch (err) {
+        console.warn(
+          `[CustomOgImages] Failed to generate social image for "${changeEvent.file.data.slug}": ${err}`,
+        )
       }
-    },
+    }
+  }
+},
     externalResources: (ctx) => {
       if (!ctx.cfg.configuration.baseUrl) {
         return {}
