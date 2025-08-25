@@ -64,7 +64,7 @@
             // TRICKLE STREAMS: Dramatically reduced lightness and alpha for extreme dimness
             const TRICKLE_LIGHTNESS_MIN = 20; // Very low min lightness for trickle streams
             const TRICKLE_LIGHTNESS_MAX = 40; // Very low max lightness for trickle streams
-            const TRICKLE_INITIAL_ALPHA = 0.2; // Low initial opacity for trickle streams
+            const TRICKLE_INITIAL_ALPHA = 0.3; // Low initial opacity for trickle streams
 
             // --- Utility Functions ---
 
