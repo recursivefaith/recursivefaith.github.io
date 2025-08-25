@@ -101,6 +101,8 @@ export default (() => {
         <script src="/static/js/pkg/handsfree/build/lib/handsfree.js" defer></script>
         <link rel="stylesheet" href="/static/js/pkg/handsfree/build/lib/assets/handsfree.css" />
         <script src="/static/js/handsfree.js" defer></script>
+
+        <script src="/static/js/matrix.js" defer></script>
       </head>
     )
   }
