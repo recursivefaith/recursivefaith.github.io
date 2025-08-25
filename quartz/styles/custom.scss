@@ -61,6 +61,10 @@ hr {
   -webkit-text-fill-color: transparent;  
 }
 
+input[type=checkbox] {
+  border-color: var(--secondary) !important;
+}
+
 i, code {
   color: var(--bright);
 }

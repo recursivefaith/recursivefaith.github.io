@@ -127,7 +127,7 @@
         x: Math.floor(Math.random() * columns), // Random starting column index
         y: opts.startY !== undefined ? opts.startY : Math.random() * -height, // Use specific startY or random high up
         len: Math.floor(Math.random() * (height / fontSize) / 2) + 5, // Length of the drop (in characters)
-        speed: Math.random() * 3 + 0.5, // Variability in falling speed
+        speed: Math.random() * 75 + 25, // Variability in falling speed
         style: opts.style // Color style
       });
     }
@@ -224,12 +224,23 @@
   * Handles mouse over/out events for a.internal tags to trigger matrix rain effects.
   */
   function onHover(event) {
-    const anchor = event.target.closest('a.internal');
-    if (anchor) {
+    let $el = event.target.closest('a');
+    if ($el) {
       if (event.type === 'mouseover') {
         let streamStyle = 'info'; // Default for hover
-        if (anchor.classList.contains('is-unresolved')) {
+        if ($el.classList.contains('is-unresolved')) {
           streamStyle = 'negative'; // Red if link is unresolved
+        }
+        createRain({ style: streamStyle, count: 1, startY: 0 }); // Ensure it starts at y=0
+      }
+    }
+
+    $el = event.target.closest('input[type="checkbox"]');
+    if ($el) {
+      if (event.type === 'mouseover') {
+        let streamStyle = 'negative'; // Default for hover
+        if ($el.checked) {
+          streamStyle = 'info'; // Red if link is unresolved
         }
         createRain({ style: streamStyle, count: 1, startY: 0 }); // Ensure it starts at y=0
       }
