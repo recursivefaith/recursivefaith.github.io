@@ -97,6 +97,10 @@ export default (() => {
             return resource
           }
         })}
+
+        <script src="/static/js/pkg/handsfree/build/lib/handsfree.js" defer></script>
+        <link rel="stylesheet" href="/static/js/pkg/handsfree/build/lib/assets/handsfree.css" />
+        <script src="/static/js/handsfree.js" defer></script>
       </head>
     )
   }
