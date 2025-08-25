@@ -29,7 +29,8 @@
             canvas.style.zIndex = '-1';
 
             // Append the created canvas element to the document body
-            document.body.appendChild(canvas);
+            canvas.classList.add('matrix-canvas');
+            document.querySelector('html').appendChild(canvas);
 
             // --- Helper function: maps a value from one numerical range to another ---
             // This is crucial for creating the color gradient within each drop, exactly as in the original.

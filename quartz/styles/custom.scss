@@ -110,3 +110,11 @@ html {
 ::-webkit-scrollbar-thumb {
   border-radius: 0;
 }
+
+// Matrix
+.matrix-canvas {
+  transition: opacity 0.5s ease-in-out;
+}
+[reader-mode="on"] .matrix-canvas {
+  opacity: 0;
+}
