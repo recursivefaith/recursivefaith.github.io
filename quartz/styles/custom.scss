@@ -78,3 +78,35 @@ blockquote {
     display: none !important;
   }
 }
+
+
+
+// Scrollbars
+/* For standard browsers (e.g., Firefox) */
+html {
+  /*   (thumb color)      (track color) */
+  scrollbar-color: var(--secondary) var(--light);
+}
+
+/* For WebKit browsers (e.g., Chrome, Safari, Edge) */
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+  border-radius: 0;
+}
+
+/* 
+ * Optional: You can style the track separately for WebKit.
+ * A light, contrasting color is recommended for usability.
+ */
+::-webkit-scrollbar-track {
+  background: var(--light);
+  border-radius: 0;
+}
+
+/* 
+ * Optional: You can add other styling like rounded corners 
+ * to the thumb for a modern look.
+ */
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+}
