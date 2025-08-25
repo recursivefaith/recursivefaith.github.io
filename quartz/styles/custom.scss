@@ -39,22 +39,24 @@ hr {
   border: 2px solid var(--highlight);
 }
 
-
-.page-title a, .article-title {
+.page-title span {
+  display: inline-block;
+}
+.page-title span, .article-title {
   font-size: 3rem;
 }
 
-.page-title a, .article-title {
+.page-title span, .article-title {
   font-family: 'HaulageCommercial-Striped';
   font-weight: normal;
-  background: linear-gradient(to bottom, var(--dark) 60%, var(--bright) 50%);
+  background: linear-gradient(to bottom, var(--dark) 55%, var(--bright) 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
 }
 .page-title:first-letter, .page-title span:first-letter, .article-title:first-letter{
   color: var(--secondary);
-  background: linear-gradient(to bottom, var(--secondary) 60%, var(--bright) 50%);
+  background: linear-gradient(to bottom, var(--secondary) 55%, var(--bright) 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;  
 }
