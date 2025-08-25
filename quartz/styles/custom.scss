@@ -27,6 +27,19 @@ button {
   padding: 0.5em 1em;
 }
 
+hr {
+  height: 2px;
+  background-color: var(--secondary);
+}
+
+.popover>.popover-inner{
+  border: 2px solid var(--secondary);
+}
+.graph>.graph-outer {
+  border: 2px solid var(--highlight);
+}
+
+
 .page-title a, .article-title {
   font-size: 3rem;
 }
