@@ -98,7 +98,10 @@ blockquote {
   }
 }
 
-
+// Sidebar
+svg {
+  fill: var(--tertiary) !important;
+}
 
 // Scrollbars
 /* For standard browsers (e.g., Firefox) */

@@ -81,7 +81,7 @@
    * @returns {string} A single random character.
    */
   function getRandomChar() {
-    const caps = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const caps = '';
     const lower = caps.toLowerCase();
     const nums = '0123456789';
     const alphabet = caps + lower + nums;
@@ -231,7 +231,10 @@
         if ($el.classList.contains('is-unresolved')) {
           streamStyle = 'negative'; // Red if link is unresolved
         }
-        createRain({ style: streamStyle, count: 1, startY: 0 }); // Ensure it starts at y=0
+
+        for (let i = 0; i < Math.random() * 5 + 1; i++) {
+          createRain({ style: streamStyle, count: 1, startY: 0 });
+        }
       }
     }
 
@@ -242,6 +245,16 @@
         if ($el.checked) {
           streamStyle = 'info'; // Red if link is unresolved
         }
+        for (let i = 0; i < Math.random() * 5 + 1; i++) {
+          createRain({ style: streamStyle, count: 1, startY: 0 });
+        }
+      }
+    }
+
+    $el = event.target.closest('button');
+    if ($el) {
+      if (event.type === 'mouseover') {
+        let streamStyle = 'info'; // Default for hover
         createRain({ style: streamStyle, count: 1, startY: 0 }); // Ensure it starts at y=0
       }
     }
@@ -337,7 +350,8 @@
   function init() {
     resizeCanvas();
     window.addEventListener('resize', resizeCanvas);
-    window.addEventListener('click', onKeyboardInput);
+    document.addEventListener('mousedown', onKeyboardInput);
+    document.addEventListener('mouseup', onKeyboardInput);
     document.addEventListener('keydown', onKeyboardInput);
     document.addEventListener('mouseover', onHover);
     document.addEventListener('mouseout', onHover);
