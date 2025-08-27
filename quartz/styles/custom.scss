@@ -35,8 +35,16 @@ hr {
 .popover>.popover-inner{
   border: 2px solid var(--secondary);
 }
+
+// Graph
+.graph>.graph-outer>.global-graph-icon {
+  opacity: 1;
+}
 .graph>.graph-outer {
-  border: 2px solid var(--highlight);
+  border: 2px solid var(--secondary);
+}
+.graph>.graph-outer>.global-graph-icon:hover {
+  background: var(--highlight)
 }
 
 .page-title span {
@@ -99,7 +107,7 @@ blockquote {
 }
 
 // Sidebar
-svg {
+svg:not(.fold):not(.folder-icon) {
   fill: var(--tertiary) !important;
 }
 

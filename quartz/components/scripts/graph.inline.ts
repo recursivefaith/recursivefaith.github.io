@@ -180,10 +180,12 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     "--tertiary",
     "--gray",
     "--light",
+    "--bright",
     "--lightgray",
     "--dark",
     "--darkgray",
     "--bodyFont",
+    "--textHighlight"
   ] as const
   const computedStyleMap = cssVars.reduce(
     (acc, key) => {
@@ -201,7 +203,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     } else if (visited.has(d.id) || d.id.startsWith("tags/")) {
       return computedStyleMap["--tertiary"]
     } else {
-      return computedStyleMap["--gray"]
+      return computedStyleMap["--bright"]
     }
   }
 
@@ -262,7 +264,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
         alpha = l.active ? 1 : 0.2
       }
 
-      l.color = l.active ? computedStyleMap["--gray"] : computedStyleMap["--lightgray"]
+      l.color = l.active ? computedStyleMap["--tertiary"] : computedStyleMap["--secondary"]
       tweenGroup.add(new Tweened<LinkRenderData>(l).to({ alpha }, 200))
     }
 
@@ -399,7 +401,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
       cursor: "pointer",
     })
       .circle(0, 0, nodeRadius(n))
-      .fill({ color: isTagNode ? computedStyleMap["--light"] : color(n) })
+      .fill({ color: isTagNode ? computedStyleMap["--textHighlight"] : color(n) })
       .on("pointerover", (e) => {
         updateHoverInfo(e.target.label)
         oldLabelOpacity = label.alpha
@@ -441,7 +443,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     const linkRenderDatum: LinkRenderData = {
       simulationData: l,
       gfx,
-      color: computedStyleMap["--lightgray"],
+      color: computedStyleMap["--secondary"],
       alpha: 1,
       active: false,
     }
