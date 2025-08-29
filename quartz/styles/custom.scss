@@ -97,6 +97,19 @@ blockquote {
   background: var(--lightgray) !important;
 }
 
+@media (max-width: 992px) {
+  .center img {
+    width: 100%;
+  }
+  .right.sidebar {
+    display: block !important;
+  }
+  .right.sidebar > div {
+    width: 100%;
+    flex: none;
+  }
+}
+
 @media (max-width: 768px) {
   .page-title span {
     font-size: .9em !important;
