@@ -246,18 +246,20 @@
    * Handles mouse over/out events for a.internal tags to trigger matrix rain effects.
    */
   function onHover(event) {
-    let $el = event.target.closest('a');
-    if ($el) {
+    let $img = event.target.closest('img');
+    if ($img && $img.tagName.toUpperCase() === 'IMG') {
+      createRain({ style: 'trickle', count: Math.random()*10+1, startY: 0 });
+    }
+    
+    let $a = event.target.closest('a');
+    if ($a) {
       if (event.type === 'mouseover') {
         let streamStyle = 'info'; // Default for hover
-        if ($el.classList.contains('is-unresolved')) {
+        if ($a.classList.contains('is-unresolved')) {
           streamStyle = 'negative'; // Red if link is unresolved
         }
-
         // Create multiple rain drops on hover
-        for (let i = 0; i < Math.random() * 5 + 1; i++) {
-          createRain({ style: streamStyle, count: 1, startY: 0 });
-        }
+        createRain({ style: streamStyle, count: Math.random()*3+1, startY: 0 });
       }
     }
 
