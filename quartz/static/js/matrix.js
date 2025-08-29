@@ -7,6 +7,7 @@
   let fontSize = 16; // Adjustable font size for individual matrix characters
   let columns; // Number of character columns that fit across the canvas width
   let drops = []; // Array to store individual matrix rain "drops" (vertical lines of characters)
+  let activeColumns = []; // New: Array to track columns that currently have an active drop
 
   // Global 2D grid to store the state of each character cell on the canvas.
   let charGrid = [];
@@ -70,8 +71,9 @@
   const INACTIVE_CELL_ALPHA_MIN = 0.15;
   const INACTIVE_CELL_ALPHA_MAX = 0.25;
 
-  const TRICKLE_LIGHTNESS_MIN = 20;
-  const TRICKLE_LIGHTNESS_MAX = 40;
+  // Updated Trickle Brightness: TRICKLE_LIGHTNESS_MIN and MAX increased for a brighter effect.
+  const TRICKLE_LIGHTNESS_MIN = 40; // Increased from 20
+  const TRICKLE_LIGHTNESS_MAX = 55; // Increased from 40
   const TRICKLE_INITIAL_ALPHA = 0.3;
 
   // --- Utility Functions ---
@@ -81,7 +83,7 @@
    * @returns {string} A single random character.
    */
   function getRandomChar() {
-    const caps = '';
+    const caps = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const lower = caps.toLowerCase();
     const nums = '0123456789';
     const alphabet = caps + lower + nums;
@@ -111,6 +113,8 @@
         ttl: 0 // Time to live (frames remaining) for character to fade
       }))
     );
+    // Clear active columns on resize as all drops are effectively reset
+    activeColumns = [];
   }
 
   /**
@@ -123,13 +127,30 @@
    */
   function createRain(opts) {
     for (let i = 0; i < opts.count; i++) {
-      drops.push({
-        x: Math.floor(Math.random() * columns), // Random starting column index
-        y: opts.startY !== undefined ? opts.startY : Math.random() * -height, // Use specific startY or random high up
-        len: Math.floor(Math.random() * (height / fontSize) / 2) + 5, // Length of the drop (in characters)
-        speed: Math.random() * 75 + 25, // Variability in falling speed
-        style: opts.style // Color style
-      });
+      let x;
+      let attempts = 0;
+      const maxAttempts = 50; // Prevents an infinite loop
+
+      // Find an available column that doesn't have an active drop
+      do {
+        x = Math.floor(Math.random() * columns);
+        attempts++;
+      } while (activeColumns.includes(x) && attempts < maxAttempts);
+
+      // Only create a drop if we found an available column
+      if (attempts < maxAttempts) {
+        drops.push({
+          x: x,
+          y: opts.startY !== undefined ? opts.startY : Math.random() * -height,
+          // Shorter Streaks: Adjusted the length calculation
+          len: Math.floor(Math.random() * 10) + 3,
+          // Adjusted speed to make drops move slower
+          speed: Math.random() * 35 + 10, // Reduced from 'Math.random() * 75 + 25'
+          style: opts.style
+        });
+        // Mark the column as active
+        activeColumns.push(x);
+      }
     }
   }
 
@@ -178,17 +199,17 @@
       lightness = map(charIndexInDrop, 0, dropLength - 1, COLORED_TIP_LIGHTNESS_MAX, COLORED_TAIL_LIGHTNESS_MIN);
       lightness = Math.max(COLORED_TAIL_LIGHTNESS_MIN, Math.min(COLORED_TIP_LIGHTNESS_MAX, lightness)); // Clamp values
     } else if (dropStyle === 'trickle') {
-      // Trickle streams are generally dimmer
+      // Trickle streams are generally dimmer, using updated TRICKLE_LIGHTNESS_MIN/MAX
       lightness = map(charIndexInDrop, 0, dropLength - 1, TRICKLE_LIGHTNESS_MAX, TRICKLE_LIGHTNESS_MIN);
       lightness = Math.max(TRICKLE_LIGHTNESS_MIN, Math.min(TRICKLE_LIGHTNESS_MAX, lightness)); // Clamp values
     } else {
       lightness = 5; // Fallback
     }
-    
+
     // CRITICAL CHANGE: Force the very first cell (lead) to be pure white
     if (charIndexInDrop === 0) {
-      saturation = 0;   // No color saturation
-      lightness = 100;  // Full brightness
+      saturation = 0; // No color saturation
+      lightness = 100; // Full brightness
     }
 
     return { hue, saturation, lightness, alpha };
@@ -219,10 +240,10 @@
       createRain({ style: streamStyle, count: 1 });
     }
   }
-  
+
   /**
-  * Handles mouse over/out events for a.internal tags to trigger matrix rain effects.
-  */
+   * Handles mouse over/out events for a.internal tags to trigger matrix rain effects.
+   */
   function onHover(event) {
     let $el = event.target.closest('a');
     if ($el) {
@@ -232,6 +253,7 @@
           streamStyle = 'negative'; // Red if link is unresolved
         }
 
+        // Create multiple rain drops on hover
         for (let i = 0; i < Math.random() * 5 + 1; i++) {
           createRain({ style: streamStyle, count: 1, startY: 0 });
         }
@@ -260,7 +282,6 @@
     }
   }
 
-
   // --- Animation Loop ---
 
   /**
@@ -275,7 +296,8 @@
     ctx.textBaseline = 'top';
 
     // --- Generate Continuous Trickle Streams (background activity) ---
-    if (Math.random() < 0.02) { // About 2% chance per frame to add a new trickle drop
+    // Increased trickle drop rate: Math.random() < 0.1 (10% chance per frame)
+    if (Math.random() < 0.1) {
       createRain({ style: 'trickle', count: 1 });
     }
 
@@ -286,6 +308,11 @@
 
       // Remove drop if it has completely fallen off screen
       if (drop.y - (drop.len * fontSize) > height) {
+        // Remove the column from the activeColumns array when drop goes off-screen
+        const index = activeColumns.indexOf(drop.x);
+        if (index > -1) {
+          activeColumns.splice(index, 1);
+        }
         drops.splice(n, 1);
         continue;
       }
@@ -305,13 +332,14 @@
           saturation: saturation,
           lightness: lightness,
           alpha: alpha,
-          ttl: 20 // Time to live (frames remaining) for character to fade in opacity
+          // Reduced fadeDuration for faster fade-out
+          ttl: 10 // Time to live (frames remaining) for character to fade in opacity
         };
       }
     }
 
     // 2. Render Grid and Fade / Flicker Background:
-    const fadeDuration = 20; // How many frames a character remains on screen while fading
+    const fadeDuration = 10; // How many frames a character remains on screen while fading
     const rowsInGrid = charGrid[0] ? charGrid[0].length : 0; // Get actual number of rows from grid
 
     for (let col = 0; col < columns; col++) {
@@ -322,19 +350,16 @@
 
         if (cell.ttl > 0) { // Active drop character: Render with fading opacity
           // Lightness is set in getHSLForChar and represents the color gradient.
-          // Only alpha changes over TTL to create a fade-out effect.
-          const currentLightness = cell.lightness;
-          const currentAlpha = map(cell.ttl, 0, fadeDuration, 0, cell.alpha);
+          // Alpha now fades to INACTIVE_CELL_ALPHA_MIN for a smoother blend (no "burn")
+          const currentLightness = map(fadeDuration - cell.ttl, 0, fadeDuration, cell.lightness, PRIMARY_TAIL_LIGHTNESS_MIN);
+          const currentAlpha = map(cell.ttl, 0, fadeDuration, INACTIVE_CELL_ALPHA_MIN, cell.alpha);
 
           ctx.fillStyle = `hsla(${cell.hue}, ${cell.saturation}%, ${currentLightness}%, ${currentAlpha})`;
           ctx.fillText(cell.char, charX, charY);
           cell.ttl--;
 
-          if (cell.ttl <= 0) {
-            // Clear character data completely when TTL expires.
-            cell.char = '';
-            cell.hue = 0; saturation = 0; lightness = 0; alpha = 0;
-          }
+          // No need to clear character data completely when TTL expires,
+          // as the background rendering will naturally take over.
         } else { // Inactive cell: Render a flickering background character
           const inactiveLightness = map(Math.random(), 0, 1, INACTIVE_CELL_LIGHTNESS_MIN, INACTIVE_CELL_LIGHTNESS_MAX);
           ctx.fillStyle = `hsla(${COLORS.inactive.h}, ${COLORS.inactive.s}%, ${inactiveLightness}%, ${map(Math.random(), 0, 1, INACTIVE_CELL_ALPHA_MIN, INACTIVE_CELL_ALPHA_MAX)})`;
