@@ -145,7 +145,7 @@
           // Shorter Streaks: Adjusted the length calculation
           len: Math.floor(Math.random() * 10) + 3,
           // Adjusted speed to make drops move slower
-          speed: Math.random() * 35 + 10, // Reduced from 'Math.random() * 75 + 25'
+          speed: Math.random() * 35 + 10,
           style: opts.style
         });
         // Mark the column as active
@@ -207,7 +207,8 @@
     }
 
     // CRITICAL CHANGE: Force the very first cell (lead) to be pure white
-    if (charIndexInDrop === 0) {
+    // ONLY IF the drop is NOT a trickle style.
+    if (charIndexInDrop === 0 && dropStyle !== 'trickle') {
       saturation = 0; // No color saturation
       lightness = 100; // Full brightness
     }
@@ -282,6 +283,34 @@
     }
   }
 
+  /**
+   * Handles mouse movement to create a trail of trickle drops.
+   * @param {MouseEvent} event - The mousemove event object.
+   */
+  function onMouseMove(event) {
+    // Only create a new drop with a certain probability to avoid overwhelming the canvas
+    if (Math.random() < 0.3) { // 30% chance to create a drop on mouse move
+      const mouseX = event.clientX;
+      const mouseY = event.clientY;
+
+      const col = Math.floor(mouseX / fontSize);
+
+      // Ensure the column is within bounds
+      if (col >= 0 && col < columns) {
+        const newDropLen = Math.floor(Math.random() * 10) + 5; // The desired final length
+
+        drops.push({
+          x: col,
+          y: mouseY, // The TOP of the initial character is at mouseY
+          len: 1, // Start with a length of 1
+          targetLen: newDropLen, // Store the desired final length for growth
+          speed: Math.random() * 10 + 5,
+          style: 'trickle'
+        });
+      }
+    }
+  }
+
   // --- Animation Loop ---
 
   /**
@@ -304,26 +333,54 @@
     // 1. Process Drops: Update positions and "write" characters to `charGrid`.
     for (let n = drops.length - 1; n >= 0; n--) {
       const drop = drops[n];
+
+      // Update currentLen for trickle drops to make them grow
+      if (drop.style === 'trickle' && drop.len < drop.targetLen) {
+        drop.len = Math.min(drop.len + 1, drop.targetLen); // Grow by 1 character per frame
+      }
+
       drop.y += drop.speed;
 
+      // Determine the length to use for rendering and off-screen check
+      const renderLen = drop.len; // `len` now directly represents the current rendered length
+
       // Remove drop if it has completely fallen off screen
-      if (drop.y - (drop.len * fontSize) > height) {
+      if (drop.y > height) { // Condition modified to check if the top of the drop is off-screen.
+                             // This is because drops now grow downwards from drop.y.
         // Remove the column from the activeColumns array when drop goes off-screen
-        const index = activeColumns.indexOf(drop.x);
-        if (index > -1) {
-          activeColumns.splice(index, 1);
+        // Only remove if it was explicitly added by createRain (i.e., not a mouse trail drop)
+        if (drop.style !== 'trickle' || drop.y === drop.startY || activeColumns.includes(drop.x)) {
+            const index = activeColumns.indexOf(drop.x);
+            if (index > -1) {
+              activeColumns.splice(index, 1);
+            }
         }
         drops.splice(n, 1);
         continue;
       }
 
-      for (let i = 0; i < drop.len; i++) {
+      for (let i = 0; i < renderLen; i++) {
         const col = drop.x;
-        const row = Math.floor((drop.y - (i * fontSize)) / fontSize);
+        // Characters are now drawn *downwards* from drop.y (which is the top of the streak)
+        const row = Math.floor((drop.y + (i * fontSize)) / fontSize);
 
         if (col < 0 || col >= columns || row < 0 || row >= charGrid[0].length) continue; // Ensure row is within bounds
 
-        const { hue, saturation, lightness, alpha } = getHSLForChar(i, drop.len, drop.style);
+        // Calculate charIndexForGradient:
+        let charIndexForGradient;
+        if (drop.style === 'trickle') {
+          // For trickle (mouse trails), i=0 is top (tip), i=renderLen-1 is bottom (tail).
+          // We want tip (top) to be normal green and grow downwards.
+          charIndexForGradient = i; // Retain current behavior for trickle
+        } else {
+          // For non-trickle (keyboard/hover), i=0 is top, i=renderLen-1 is bottom.
+          // We want the white "tip" to be at the BOTTOM of the streak,
+          // so getHSLForChar's charIndexInDrop === 0 must correspond to the bottom-most character.
+          charIndexForGradient = (renderLen - 1) - i; // Invert for non-trickle
+        }
+
+        // Pass renderLen as dropLength to getHSLForChar for accurate gradient mapping for the *currently visible* length
+        const { hue, saturation, lightness, alpha } = getHSLForChar(charIndexForGradient, renderLen, drop.style);
 
         // Update charGrid cell with character and its full HSL color properties
         charGrid[col][row] = {
@@ -380,6 +437,7 @@
     document.addEventListener('keydown', onKeyboardInput);
     document.addEventListener('mouseover', onHover);
     document.addEventListener('mouseout', onHover);
+    document.addEventListener('mousemove', onMouseMove); // New: Mousemove listener
     draw(); // Start the main animation loop
   }
 
