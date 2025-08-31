@@ -6,6 +6,20 @@
     margin: 0;
   }
 
+  & .graph-title {
+    & label {
+      padding-right: 1rem;      
+      text-align: center;
+      font-weight: bold;
+      color: var(--darkgray);
+      cursor: pointer;
+
+      &.active {
+        color: var(--tertiary);
+      }
+    }
+  }
+
   & > .graph-outer {
     border-radius: 5px;
     border: 1px solid var(--lightgray);
@@ -52,22 +66,22 @@
     &.active {
       display: inline-block;
     }
+  }
 
-    & > .global-graph-container {
-      border: 1px solid var(--lightgray);
-      background-color: var(--light);
-      border-radius: 5px;
-      box-sizing: border-box;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      height: 80vh;
-      width: 80vw;
+  & .global-graph-container {
+    border: 1px solid var(--lightgray);
+    background-color: color-mix(in srgb, var(--light) 60%, transparent);
+    border-radius: 5px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80vh;
+    width: 80vw;
 
-      @media all and not ($desktop) {
-        width: 90%;
-      }
+    @media all and not ($desktop) {
+      width: 90%;
     }
   }
 }

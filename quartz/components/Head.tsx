@@ -103,6 +103,7 @@ export default (() => {
         <script src="/static/js/handsfree.js" defer></script>
 
         <script src="/static/js/matrix.js" defer></script>
+        <script src="/static/js/custom.js" defer></script>
       </head>
     )
   }

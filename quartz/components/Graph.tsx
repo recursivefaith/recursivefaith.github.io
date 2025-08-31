@@ -65,9 +65,12 @@ export default ((opts?: Partial<GraphOptions>) => {
     const globalGraph = { ...defaultOptions.globalGraph, ...opts?.globalGraph }
     return (
       <div class={classNames(displayClass, "graph")}>
-        <h3>{i18n(cfg.locale).components.graph.title}</h3>
+        <h3 class="graph-title">
+          <label data-sidebar-focus="graph" class="active">{i18n(cfg.locale).components.graph.title}</label>
+          <label data-sidebar-focus="qrx">QR Code</label>
+        </h3>
         <div class="graph-outer">
-          <div class="graph-container" data-cfg={JSON.stringify(localGraph)}></div>
+          <div class="graph-container active" data-hideable="true" data-sidebar-focus="graph" data-cfg={JSON.stringify(localGraph)}></div>
           <button class="global-graph-icon" aria-label="Global Graph">
             <svg
               version="1.1"
@@ -94,6 +97,7 @@ export default ((opts?: Partial<GraphOptions>) => {
               />
             </svg>
           </button>
+          <div data-hideable="true" data-sidebar-focus="qrcode"></div>
         </div>
         <div class="global-graph-outer">
           <div class="global-graph-container" data-cfg={JSON.stringify(globalGraph)}></div>

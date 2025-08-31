@@ -161,3 +161,8 @@ html {
 [reader-mode="on"] .matrix-canvas {
   opacity: 0;
 }
+
+// data sidebar
+[data-sidebar-focus][data-hideable]:not(.active) {
+  display: none;
+}
