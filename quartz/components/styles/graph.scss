@@ -22,6 +22,7 @@
 
   & > .graph-outer {
     border-radius: 5px;
+    background-color: color-mix(in srgb, var(--light) 60%, transparent) !important;
     border: 1px solid var(--lightgray);
     box-sizing: border-box;
     height: 250px;

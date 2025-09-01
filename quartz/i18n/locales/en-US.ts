@@ -39,7 +39,7 @@ export default {
       createdWith: "Created with",
     },
     graph: {
-      title: "Virtual Egregore",
+      title: "Egrebear",
     },
     recentNotes: {
       title: "Recent Notes",

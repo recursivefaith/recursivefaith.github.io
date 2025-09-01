@@ -166,3 +166,8 @@ html {
 [data-sidebar-focus][data-hideable]:not(.active) {
   display: none;
 }
+
+// Transclusion
+blockquote.transclude {
+  background-color: color-mix(in srgb, var(--light) 60%, transparent) !important;
+}
