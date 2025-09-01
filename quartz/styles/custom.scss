@@ -171,3 +171,7 @@ html {
 blockquote.transclude {
   background-color: color-mix(in srgb, var(--light) 60%, transparent) !important;
 }
+
+.popover h1 {
+  font-size: 3rem;
+}
