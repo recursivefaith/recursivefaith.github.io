@@ -71,7 +71,7 @@ export default ((opts?: Partial<GraphOptions>) => {
         </h3>
         <div class="graph-outer">
           <div class="graph-container active" data-hideable="true" data-sidebar-focus="graph" data-cfg={JSON.stringify(localGraph)}></div>
-          <button class="global-graph-icon" aria-label="Global Graph">
+          <button class="global-graph-icon active" aria-label="Global Graph" data-hideable="true" data-sidebar-focus="graph">
             <svg
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +97,8 @@ export default ((opts?: Partial<GraphOptions>) => {
               />
             </svg>
           </button>
-          <div data-hideable="true" data-sidebar-focus="qrcode"></div>
+          <div data-hideable="true" data-sidebar-focus="qrcode" class="qrx-page">
+          </div>
         </div>
         <div class="global-graph-outer">
           <div class="global-graph-container" data-cfg={JSON.stringify(globalGraph)}></div>

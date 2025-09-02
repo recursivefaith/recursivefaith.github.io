@@ -175,3 +175,24 @@ blockquote.transclude {
 .popover h1 {
   font-size: 3rem;
 }
+
+/*
+ * Styles for each individual QR code canvas.
+ */
+.qrx-page.active {
+  display: block;
+}
+.qrx-page {
+  box-sizing: 100%;
+  padding: 1em ;
+  margin-top: -0.25em;
+  background: var(--light);
+}
+.qrx-page canvas {
+  display: block;
+  width: 100%;
+  display: none;
+}
+.qrx-page canvas.active {
+  display: block;
+}

@@ -98,6 +98,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   const links: SimpleLinkData[] = []
   const tags: SimpleSlug[] = []
   const validLinks = new Set(data.keys())
+  const pageContent = data.get(slug)
 
   const tweens = new Map<string, TweenNode>()
   for (const [source, details] of data.entries()) {
@@ -550,6 +551,15 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     app.renderer.render(stage)
     requestAnimationFrame(animate)
   }
+
+  // Add this line to trigger your custom event
+  document.dispatchEvent(new CustomEvent("generate_qrx", {
+    detail: {
+      graphElement: graph, // The HTML element containing the graph
+      slug: fullSlug,      // The slug of the current page
+      page: pageContent    // The content of the current page
+    }
+  }));
 
   requestAnimationFrame(animate)
   return () => {
