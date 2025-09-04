@@ -50,11 +50,11 @@ hr {
 .page-title span {
   display: inline-block;
 }
-.page-title span, .article-title {
-  font-size: 3rem;
+.page-title span, .article-title, .article-title span:first-letter {
+  font-size: 2rem;
 }
 
-.page-title span, .article-title {
+.page-title span, .article-title, .article-title span:first-letter {
   font-family: 'HaulageCommercial-Striped';
   font-weight: normal;
   background: linear-gradient(to bottom, var(--dark) 55%, var(--bright) 50%);
@@ -62,7 +62,7 @@ hr {
   -webkit-text-fill-color: transparent;
 
 }
-.page-title:first-letter, .page-title span:first-letter, .article-title:first-letter{
+.page-title:first-letter, .page-title span:first-letter, .article-title:first-letter, .article-title span:first-letter{
   color: var(--secondary);
   background: linear-gradient(to bottom, var(--secondary) 55%, var(--bright) 50%);
   -webkit-background-clip: text;
@@ -195,4 +195,20 @@ blockquote.transclude {
 }
 .qrx-page canvas.active {
   display: block;
+}
+
+
+// left sidebar
+.page>#quartz-body .sidebar.left,
+.page>#quartz-body .sidebar.right {
+  padding-top: 3rem !important;
+}
+.sidebar.left .article-title {
+  margin-top: 0;
+}
+.page>#quartz-body .page-header {
+  margin-top: 3rem !important;
+}
+.page>#quartz-body .sidebar {
+  gap: 0.5rem !important;
 }

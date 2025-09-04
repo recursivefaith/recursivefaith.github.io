@@ -8,7 +8,7 @@
 
   // == CONFIGURATION VARIABLES ==
   // These variables can be easily changed to customize the behavior.
-  const ANIMATION_SPEED_MS = 500;
+  const ANIMATION_SPEED_MS = 250;
   
   // Function to create a canvas element for a QR code, without the border.
   // Sizing and styling for the canvas should be handled by CSS.
