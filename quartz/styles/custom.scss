@@ -215,7 +215,7 @@ blockquote.transclude {
 
 body .explorer-toggle.mobile-explorer {
   position: fixed !important;
-  top: 1rem;
+  top: 0.5rem;
 }
 
 // @TODO add custom styles for databases
@@ -230,6 +230,8 @@ body .explorer-toggle.mobile-explorer {
   }
   .graph {
     display: flex;
+    position: relative;
+    
     & > div {
       flex: 1;
     }
@@ -241,16 +243,11 @@ body .explorer-toggle.mobile-explorer {
     width: 100%;
     top: 0;
     left: 0;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     padding-left: 3rem;
+    padding-bottom: 0.5rem;
     background: var(--light);
   }  
-
-  .graph-wrap {
-    position: absolute;
-    left: -1000px;
-  }
-
 
   .mobile-no-scroll {
     & .page>#quartz-body .left.sidebar {
@@ -295,12 +292,26 @@ body .explorer-toggle.mobile-explorer {
 
 @media (max-width: 800px) {
   body .page>#quartz-body {
-      grid-template:
-      "grid-sidebar-left"
-      "grid-header"
-      "grid-center"
-      "grid-sidebar-right"
-      "grid-footer" / auto;
-      gap: 5px;
+    grid-template:
+    "grid-header"
+    "grid-center"
+    "grid-sidebar-right"
+    "grid-sidebar-left"
+    "grid-footer" / auto;
+    gap: 5px;
+
+    & .center > .page-header {
+      margin-top: 6rem !important;
+    }
+  }
+
+  .mobile-no-scroll body .page>#quartz-body {
+    grid-template:
+    "grid-sidebar-left"
+    "grid-header"
+    "grid-center"
+    "grid-sidebar-right"
+    "grid-footer" / auto;
+    gap: 5px;
   }
 }
