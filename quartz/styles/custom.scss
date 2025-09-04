@@ -37,13 +37,13 @@ hr {
 }
 
 // Graph
-.graph>.graph-outer>.global-graph-icon {
+.graph>.graph-outer .global-graph-icon {
   opacity: 1;
 }
 .graph>.graph-outer {
   border: 2px solid var(--secondary);
 }
-.graph>.graph-outer>.global-graph-icon:hover {
+.graph>.graph-outer .global-graph-icon:hover {
   background: var(--highlight)
 }
 
@@ -211,4 +211,96 @@ blockquote.transclude {
 }
 .page>#quartz-body .sidebar {
   gap: 0.5rem !important;
+}
+
+body .explorer-toggle.mobile-explorer {
+  position: fixed !important;
+  top: 1rem;
+}
+
+// @TODO add custom styles for databases
+.base {
+  display: none !important;
+}
+
+@media (max-width: 800px) {
+  .page>#quartz-body .sidebar.left {
+    position: relative !important;
+    background: none !important;
+  }
+  .graph {
+    display: flex;
+    & > div {
+      flex: 1;
+    }
+  }
+
+  .left.sidebar .page-title.mobile-only {
+    position: fixed !important;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 1rem;
+    padding-left: 3rem;
+    background: var(--light);
+  }  
+
+  .graph-wrap {
+    position: absolute;
+    left: -1000px;
+  }
+
+
+  .mobile-no-scroll {
+    & .page>#quartz-body .left.sidebar {
+      position: sticky !important;
+      margin-left: -1rem !important;
+
+      & > div {
+        padding-left: 1rem !important;
+      }
+    }
+
+    .graph-wrap {
+      z-index: 100;
+      left: 0;
+      position: fixed;
+      bottom: 0.5rem;
+      padding-right: 1rem;
+      padding-bottom: 0;      
+    }
+
+    .qrx-page canvas {
+      max-height: 250px;
+    }
+
+    .explorer:not(.collapsed)>.explorer-content {
+      padding-bottom: 350px !important;
+      padding-left: 1rem !important;
+    }
+
+    .page>#quartz-body .sidebar.left:has(.explorer) {
+      padding-left: 0 !important;
+    }
+
+    .explorer:not(.collapsed) {
+      flex: 0 !important;
+    }
+  }
+  .explorer.collapsed {
+    flex: 0 !important;
+  }
+}
+
+@media (max-width: 800px) {
+  body .page>#quartz-body {
+      grid-template:
+      "grid-sidebar-left"
+      "grid-header"
+      "grid-center"
+      "grid-sidebar-right"
+      "grid-footer" / auto;
+      gap: 5px;
+  }
 }
