@@ -87,6 +87,7 @@ const calloutMapping = {
   example: "example",
   quote: "quote",
   cite: "quote",
+  chat: "chat",
 } as const
 
 const arrowMapping: Record<string, string> = {
@@ -410,123 +411,120 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
         })
       }
 
-      if (opts.callouts) {
-        plugins.push(() => {
-          return (tree: Root, _file) => {
-            visit(tree, "blockquote", (node) => {
-              if (node.children.length === 0) {
-                return
-              }
+if (opts.callouts) {
+  plugins.push(() => {
+    return (tree: Root, _file) => {
+      visit(tree, "blockquote", (node) => {
+        if (node.children.length === 0) {
+          return;
+        }
 
-              // find first line and callout content
-              const [firstChild, ...calloutContent] = node.children
-              if (firstChild.type !== "paragraph" || firstChild.children[0]?.type !== "text") {
-                return
-              }
+        const [firstChild, ...calloutContent] = node.children;
+        if (firstChild.type !== "paragraph" || firstChild.children[0]?.type !== "text") {
+          return;
+        }
 
-              const text = firstChild.children[0].value
-              const restOfTitle = firstChild.children.slice(1)
-              const [firstLine, ...remainingLines] = text.split("\n")
-              const remainingText = remainingLines.join("\n")
+        const text = firstChild.children[0].value;
+        const restOfTitle = firstChild.children.slice(1);
+        const [firstLine, ...remainingLines] = text.split("\n");
+        const remainingText = remainingLines.join("\n");
 
-              const match = firstLine.match(calloutRegex)
-              if (match && match.input) {
-                const [calloutDirective, typeString, calloutMetaData, collapseChar] = match
-                const calloutType = canonicalizeCallout(typeString.toLowerCase())
-                const collapse = collapseChar === "+" || collapseChar === "-"
-                const defaultState = collapseChar === "-" ? "collapsed" : "expanded"
-                const titleContent = match.input.slice(calloutDirective.length).trim()
-                const useDefaultTitle = titleContent === "" && restOfTitle.length === 0
-                const titleNode: Paragraph = {
-                  type: "paragraph",
-                  children: [
-                    {
-                      type: "text",
-                      value: useDefaultTitle
-                        ? capitalize(typeString).replace(/-/g, " ")
-                        : titleContent + " ",
-                    },
-                    ...restOfTitle,
-                  ],
-                }
-                const title = mdastToHtml(titleNode)
+        const match = firstLine.match(calloutRegex);
+        if (!match) {
+          return; // Not a callout, do nothing.
+        }
 
-                const toggleIcon = `<div class="fold-callout-icon"></div>`
+        const [calloutDirective, typeString, calloutMetaData, collapseChar] = match;
+        const calloutType = canonicalizeCallout(typeString.toLowerCase());
+        const collapse = collapseChar === "+" || collapseChar === "-";
+        const defaultState = collapseChar === "-" ? "collapsed" : "expanded";
+        const titleContent = match.input.slice(calloutDirective.length).trim();
+        const useDefaultTitle = titleContent === "" && restOfTitle.length === 0;
 
-                const titleHtml: Html = {
-                  type: "html",
-                  value: `<div
-                  class="callout-title"
-                >
-                  <div class="callout-icon"></div>
-                  <div class="callout-title-inner">${title}</div>
-                  ${collapse ? toggleIcon : ""}
-                </div>`,
-                }
+        const titleNode: Paragraph = {
+          type: "paragraph",
+          children: [
+            {
+              type: "text",
+              value: useDefaultTitle ? capitalize(typeString).replace(/-/g, " ") : titleContent,
+            },
+            ...restOfTitle,
+          ],
+        };
 
-                const blockquoteContent: (BlockContent | DefinitionContent)[] = [titleHtml]
-                if (remainingText.length > 0) {
-                  blockquoteContent.push({
-                    type: "paragraph",
-                    children: [
-                      {
-                        type: "text",
-                        value: remainingText,
-                      },
-                    ],
-                  })
-                }
+        const titleDivChildren: BlockContent[] = [
+          {
+            type: "blockquote",
+            data: { hName: "div", hProperties: { className: ["callout-icon"] } },
+            children: [],
+          },
+          {
+            type: "blockquote",
+            data: { hName: "div", hProperties: { className: ["callout-title-inner"] } },
+            children: [titleNode],
+          },
+        ];
 
-                // For the rest of the MD callout elements other than the title, wrap them with
-                // two nested HTML <div>s (use some hacked mdhast component to achieve this) of
-                // class `callout-content` and `callout-content-inner` respectively for
-                // grid-based collapsible animation.
-                if (calloutContent.length > 0) {
-                  node.children = [
-                    node.children[0],
-                    {
-                      data: { hProperties: { className: ["callout-content"] }, hName: "div" },
-                      type: "blockquote",
-                      children: [
-                        {
-                          data: {
-                            hProperties: { className: ["callout-content-inner"] },
-                            hName: "div",
-                          },
-                          type: "blockquote",
-                          children: [...calloutContent],
-                        },
-                      ],
-                    },
-                  ]
-                }
+        if (collapse) {
+          titleDivChildren.push({
+            type: "blockquote",
+            data: { hName: "div", hProperties: { className: ["fold-callout-icon"] } },
+            children: [],
+          });
+        }
 
-                // replace first line of blockquote with title and rest of the paragraph text
-                node.children.splice(0, 1, ...blockquoteContent)
+        const titleHtml: BlockContent = {
+          type: "blockquote",
+          data: { hName: "div", hProperties: { className: ["callout-title"] } },
+          children: titleDivChildren,
+        };
 
-                const classNames = ["callout", calloutType]
-                if (collapse) {
-                  classNames.push("is-collapsible")
-                }
-                if (defaultState === "collapsed") {
-                  classNames.push("is-collapsed")
-                }
+        const bodyNodes: (BlockContent | DefinitionContent)[] = [];
+        if (remainingText.trim().length > 0) {
+          bodyNodes.push({ type: "paragraph", children: [{ type: "text", value: remainingText }] });
+        }
+        bodyNodes.push(...calloutContent);
 
-                // add properties to base blockquote
-                node.data = {
-                  hProperties: {
-                    ...(node.data?.hProperties ?? {}),
-                    className: classNames.join(" "),
-                    "data-callout": calloutType,
-                    "data-callout-fold": collapse,
-                    "data-callout-metadata": calloutMetaData,
-                  },
-                }
-              }
-            })
-          }
-        })
-      }
+        const newChildren: (BlockContent | DefinitionContent)[] = [titleHtml];
+        if (bodyNodes.length > 0) {
+          const bodyWrapper: BlockContent = {
+            type: "blockquote",
+            data: { hName: "div", hProperties: { className: ["callout-content"] } },
+            children: [
+              {
+                type: "blockquote",
+                data: { hName: "div", hProperties: { className: ["callout-content-inner"] } },
+                children: bodyNodes,
+              },
+            ],
+          };
+          newChildren.push(bodyWrapper);
+        }
+
+        node.children = newChildren;
+
+        const classNames = ["callout", calloutType];
+        if (collapse) {
+          classNames.push("is-collapsible");
+        }
+        if (defaultState === "collapsed") {
+          classNames.push("is-collapsed");
+        }
+
+        node.data = {
+          hProperties: {
+            ...(node.data?.hProperties ?? {}),
+            className: classNames.join(" "),
+            "data-callout": calloutType,
+            "data-callout-fold": collapse,
+            "data-callout-metadata": calloutMetaData,
+          },
+        };
+      });
+    };
+  });
+}
+
 
       if (opts.mermaid) {
         plugins.push(() => {

@@ -65,7 +65,7 @@ export default ((opts?: Partial<GraphOptions>) => {
     const globalGraph = { ...defaultOptions.globalGraph, ...opts?.globalGraph }
     return (
       <div class="graph-wrap">
-        <h1 class="page-title"><a href="."><span>Thought</span> <span>Form</span><span>:</span></a></h1>
+        <h1 class="page-title"><a href="/"><span>Thought</span> <span>Form</span><span>:</span></a></h1>
         <div class={classNames(displayClass, "graph")}>
           <div class="graph-inner">
             <h3 style="margin:.75rem 0 0">Connectome:</h3>

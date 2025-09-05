@@ -58,7 +58,6 @@ const config: QuartzConfig = {
   },
   plugins: {
     transformers: [
-      CustomLinks(),
       Plugin.FrontMatter(),
       Plugin.CreatedModifiedDate({
         priority: ["frontmatter", "git", "filesystem"],
@@ -78,7 +77,7 @@ const config: QuartzConfig = {
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
-      
+      CustomLinks(),
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
