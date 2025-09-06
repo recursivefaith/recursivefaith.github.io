@@ -68,7 +68,7 @@ export default ((opts?: Partial<GraphOptions>) => {
         <h1 class="page-title"><a href="/"><span>Thought</span> <span>Form</span><span>:</span></a></h1>
         <div class={classNames(displayClass, "graph")}>
           <div class="graph-inner">
-            <h3 style="margin:.75rem 0 0">Connectome:</h3>
+            <h3 style="margin:.75rem 0 0">Protoplast:</h3>
             {/* <h3 class="graph-title">
               <label data-sidebar-focus="graph" class="active">{i18n(cfg.locale).components.graph.title}</label>
               <label data-sidebar-focus="qrx">QR Code</label>
