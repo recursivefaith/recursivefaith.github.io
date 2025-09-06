@@ -19,6 +19,9 @@ import { Group as TweenGroup, Tween as Tweened } from "@tweenjs/tween.js"
 import { registerEscapeHandler, removeAllChildren } from "./util"
 import { FullSlug, SimpleSlug, getFullSlug, resolveRelative, simplifySlug } from "../../util/path"
 import { D3Config } from "../Graph"
+import { drawCellWall } from "./cellwall"; // Import our new function
+import type { NodeData } from "./types"  
+
 
 type GraphicsInfo = {
   color: string
@@ -27,11 +30,6 @@ type GraphicsInfo = {
   active: boolean
 }
 
-type NodeData = {
-  id: SimpleSlug
-  text: string
-  tags: string[]
-} & SimulationNodeDatum
 
 type SimpleLinkData = {
   source: SimpleSlug
@@ -195,6 +193,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     },
     {} as Record<(typeof cssVars)[number], string>,
   )
+  const cellWallColor = computedStyleMap["--tertiary"]
 
   // calculate color
   const color = (d: NodeData) => {
@@ -368,6 +367,14 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
 
   const stage = app.stage
   stage.interactive = false
+  stage.sortableChildren = true  
+
+  // ✨ NEW: Create a container and graphics object for the cell wall
+  // It is added first to ensure it's in the background (lowest z-index).
+  const cellWallContainer = new Container({ zIndex: 0, isRenderGroup: true })
+  stage.addChild(cellWallContainer)
+  const cellWallGfx = new Graphics()
+  cellWallContainer.addChild(cellWallGfx)
 
   const labelsContainer = new Container<Text>({ zIndex: 3, isRenderGroup: true })
   const nodesContainer = new Container<Graphics>({ zIndex: 2, isRenderGroup: true })
@@ -529,6 +536,16 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   let stopAnimation = false
   function animate(time: number) {
     if (stopAnimation) return
+
+   // ✨ NEW: Call the draw function on every frame
+    drawCellWall(
+      cellWallGfx,
+      graphData.nodes,
+      width,
+      height,
+      cellWallColor,
+    );
+
     for (const n of nodeRenderData) {
       const { x, y } = n.simulationData
       if (!x || !y) continue
