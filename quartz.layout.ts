@@ -30,6 +30,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.MobileOnly(Component.PageTitle()),
     Component.Graph(),
     Component.Explorer(),
+    // Component.HandsfreeButton(),
   ],
   right: [
     Component.PageTitle(),
@@ -43,7 +44,6 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    // Component.HandsfreeButton(),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.MobileOnly(Component.Spacer()),
     Component.Backlinks(),
